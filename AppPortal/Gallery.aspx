@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="first-nav text-center">
                             <ul class="first-nav text-center">
                            <!-- <li><a href="Home.aspx">Home</a></li> -->
-                            <li><a href="About.aspx" >Home</a></li>
+                            <li><a href="Index.aspx" >Home</a></li>
                             <li><a href="Gallery.aspx" class="active">Gallery</a></li>
                           <!--  <li><a href="gallery.html" class="dropdown"></a></li> -->
                               
@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
        <ol class="breadcrumb">
 					<li class="breadcrumb-item">
-						<a href="About.aspx">Home</a>
+						<a href="Index.aspx">Home</a>
 					</li>
 					<li class="breadcrumb-item active">Gallery</li>
 				</ol>
@@ -171,7 +171,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="Home.aspx">Home</a>
 						</li> -->
 						<li>
-							<a href="About.aspx">Home</a>
+							<a href="Index.aspx">Home</a>
 						</li>
 						
 						<li>
