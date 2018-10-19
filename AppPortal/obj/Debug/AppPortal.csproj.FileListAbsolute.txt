@@ -1,0 +1,62 @@
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\csc.exe
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\System.Collections.Immutable.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\vbc.exe
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\VBCSCompiler.exe
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\roslyn\VBCSCompiler.exe.config
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\AppPortal.dll.config
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\AppPortal.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\AppPortal.pdb
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\obj\Debug\AppPortal.csprojResolveAssemblyReference.cache
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\obj\Debug\AppPortal.dll
+c:\users\swastika\documents\visual studio 2015\Projects\AppPortal\AppPortal\obj\Debug\AppPortal.pdb
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\csc.exe
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\vbc.exe
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\VBCSCompiler.exe
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\AppPortal.dll.config
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\AppPortal.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\AppPortal.pdb
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\acer\Desktop\AppPortal\AppPortal\obj\Debug\AppPortal.csprojAssemblyReference.cache
+C:\Users\acer\Desktop\AppPortal\AppPortal\obj\Debug\AppPortal.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\AppPortal\AppPortal\obj\Debug\AppPortal.csproj.CopyComplete
+C:\Users\acer\Desktop\AppPortal\AppPortal\obj\Debug\AppPortal.dll
+C:\Users\acer\Desktop\AppPortal\AppPortal\obj\Debug\AppPortal.pdb
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\AppPortal.dll.config
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\AppPortal.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\AppPortal.pdb
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\obj\Debug\AppPortal.csprojResolveAssemblyReference.cache
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\obj\Debug\AppPortal.dll
+C:\Users\HP\Downloads\AppPortal\AppPortal\AppPortal\obj\Debug\AppPortal.pdb
