@@ -34,6 +34,70 @@
             </div>
         </div>
     </section>
+
+
+    <section class="course-selection py-lg-5 py-md-4 py-4">
+        <div class="layer-transporant py-md-5 py-4">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 course-left">
+                        <h3 class="course">
+                            Get reduced fee
+                            <br> during this Summer!
+                        </h3>
+                        <p class="para my-4">
+                            Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when an unknown printer took
+                            a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet..
+                        </p>
+                        <div class="row course-details-content">
+                            <div class="col course-detials-inner-info">
+
+                                <a href="#">
+                                    <h4>Expert Instructors</h4>
+                                </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod.
+                                </p>
+                            </div>
+                            <div class="col course-detials-inner-info">
+
+                                <a href="#">
+                                    <h4>Certification</h4>
+                                </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 course-right">
+                        <form action="#" method="post">
+                            <h4 class="text-white text-center mb-3">Search for required venue</h4>
+                            <asp:DropDownList ID="Role_ddl" class="form-control" runat="server">
+                                
+                               </asp:DropDownList>
+                            <br /><br />
+                            <div class='input-group date' id='datetimepicker3'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="fas fa-lock"></span>
+                    </span>
+                </div>
+
+                <div class='input-group date' id='datetimepicker4'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="fas fa-lock"></span>
+                    </span>
+                </div>
+                            <input class="form-control mt-3" type="submit" value="Query">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
  
     <!--//courses-->
     <section class="banner-bottom-w3layouts py-lg-5 py-lg-4 py-4">
@@ -173,6 +237,13 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker3').datetimepicker({
+                    format: 'LT'
+                });
+            });
+        </script>
   </asp:Content>
 
  

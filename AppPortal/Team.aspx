@@ -19,12 +19,12 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="member-img">
-                                    <img src="images/team1.jpg" alt=" " class="img-fluid rounded-circle">
+                                    <img src="images/I1.jpeg" alt=" " class="img-fluid rounded-circle">
                                 </div>
                                 <div class="member-info text-center py-lg-4 py-2">
-                                    <h4>Mark Jackman</h4>
+                                    <h4>Harneet Singh</h4>
 
-                                    <p class="my-4"> Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros.</p>
+                                  <!--  <p class="my-4"> Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros.</p> -->
                                     <div class="mt-3 team-social text-center">
 
                                         <ul class="social-icons text-center">
@@ -54,14 +54,14 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="member-img">
-                                    <img src="images/team2.jpg" alt=" " class="img-fluid rounded-circle">
+                                    <img src="images/I2.jpg" alt=" " class="img-fluid rounded-circle">
                                 </div>
                                 <div class="member-info text-center py-lg-4 py-2">
-                                    <h4>Janet Levine</h4>
+                                    <h4>Aishwarya Sadana</h4>
 
-                                    <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
+                                  <!--  <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
 
-                                    </p>
+                                    </p> -->
                                     <div class="mt-3 team-social text-center">
 
                                         <ul class="social-icons text-center">
@@ -93,14 +93,14 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="member-img">
-                                    <img src="images/team3.jpg" alt=" " class="img-fluid rounded-circle">
+                                    <img src="images/I3.jpg" alt=" " class="img-fluid rounded-circle">
                                 </div>
                                 <div class="member-info text-center py-lg-4 py-2">
-                                    <h4>Rene Rickman</h4>
+                                    <h4>Swastika Rai</h4>
 
-                                    <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
-
-                                    </p>
+                                   <!-- <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
+                                        
+                                    </p> -->
                                     <div class="mt-3 team-social text-center">
 
                                         <ul class="social-icons text-center">
@@ -131,12 +131,12 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="member-img">
-                                    <img src="images/team4.jpg" alt=" " class="img-fluid rounded-circle">
+                                    <img src="images/I4.jpg" alt=" " class="img-fluid rounded-circle">
                                 </div>
                                 <div class="member-info text-center py-lg-4 py-2">
-                                    <h4>Daniele Norwich</h4>
-                                    <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
-                                    </p>
+                                    <h4>Pooja Kumari</h4>
+                                   <!-- <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
+                                    </p> -->
                                     <div class="mt-3 team-social text-center">
 
                                         <ul class="social-icons text-center">

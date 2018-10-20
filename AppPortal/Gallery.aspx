@@ -32,17 +32,17 @@
 				<div class="row my-4">
 					<div class="col-md-4 project-img">
 						<a href="images/gl3.jpg" id="example2" class="showcase img-fluid" data-rel="lightcase:myCollection:slideshow" title="Cayton Heath">
-							<img src="images/gl3.jpg" class="img-fluid" alt="">
+							<img src="images/P1.jpg" class="img-fluid" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 project-img">
 						<a href="images/gl4.jpg" id="example3" class="showcase img-fluid" data-rel="lightcase:myCollection:slideshow" title="Scott Webb">
-							<img src="images/gl4.jpg" class="img-fluid" alt="">
+							<img src="images/P2.jpg" class="img-fluid" alt="">
 						</a>
 					</div>
 					<div class="col-md-4 project-img">
 						<a href="images/gl5.png" id="example8" class="showcase img-fluid" data-rel="lightcase:myCollection:slideshow" title="Scott Webb">
-							<img src="images/gl5.png" class="img-fluid" alt="">
+							<img src="images/P3.jpg" class="img-fluid" alt="">
 						</a>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 					</div>
 					<div class="col-md-6 project-img">
 						<a href="images/gl.jpg" id="example6" class="showcase img-fluid" data-rel="lightcase:myCollection:slideshow" title="Cayton Heath">
-							<img src="images/gl.jpg" class="img-fluid" alt="">
+							<img src="images/P4.jpg" class="img-fluid" alt="">
 						</a>
 
 					</div>
