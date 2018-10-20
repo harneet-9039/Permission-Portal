@@ -60,6 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <ul class="first-nav text-center">
                            <!-- <li><a href="Home.aspx">Home</a></li> -->
                             <li><a href="Index.aspx" >Home</a></li>
+                             <li><a href="Team.aspx">Team</a></li>
                             <li><a href="Gallery.aspx" class="active">Gallery</a></li>
                           <!--  <li><a href="gallery.html" class="dropdown"></a></li> -->
                               

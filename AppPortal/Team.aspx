@@ -1,15 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="AppPortal.Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Team.aspx.cs" Inherits="AppPortal.Team" %>
 
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
+<html lang="zxx">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-
+<head>
     <title>Permission Portal</title>
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+ 
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -20,12 +26,12 @@
         }
     </script>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all">
     <link href="css/nav.css" rel='stylesheet' type='text/css' />
     <link href="css/style.css" rel='stylesheet' type='text/css' />
-    <link href="css/fontawesome-all.css" rel="stylesheet" />
-    <link href="//fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
 
 <body>
@@ -58,25 +64,13 @@
                 <nav class="top-overlay-content" id="nav">
                     <span class="top-overlay-close" id="close-btn"> &times; </span>
                     <div class="container" id="container">
-                        <div class="first-nav text-center">
-                            <ul class="first-nav text-center">
-                           <!-- <li><a href="Home.aspx">Home</a></li> -->
-                            <li><a href="About.aspx" class="active">Home</a></li>
-                            <li><a href="Gallery.aspx">Gallery</a></li>
-                          <!--  <li><a href="gallery.html" class="dropdown"></a></li> -->
-                              
-                           <!-- <li class="dropdown">
-                              <button class="dropbtn">Visit Venue <i class="fas fa-angle-down"></i></button>
-                              <div class="dropdown-content">
-                                <a href="Gallery.aspx">Mp Hall</a>
-                                <a href="404.html">Seminar Hall</a>
-                                 <a href="service.html">NLH</a>
-                              </div>
-                            </li> -->
-                             <li><a href="Team.aspx">Team</a></li>
-                            <li><a href="Contact.aspx">Contact</a></li>
+                        <ul class="first-nav text-center">
+                            <li><a href="Index.html">Home</a></li>
+                        
+                           <li><a href="Team.html">Team</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
                         </ul>
-                        </div>
                     </div>
                 </nav>
             </div>
@@ -86,9 +80,9 @@
     </div>
        <ol class="breadcrumb">
 					<li class="breadcrumb-item">
-					<!-- <a href="Home.aspx">Home</a> -->
+						<a href="index.html">Home</a>
 					</li>
-					<li class="breadcrumb-item active">Home</li>
+					<li class="breadcrumb-item active">Team</li>
 				</ol>
     <!---->
     <!--banner-bottom-w3layouts-->
@@ -96,168 +90,165 @@
         <div class="container">
             <div class="inner-sec-wthree-w3ls py-md-5 py-4">
                 <h3 class="tittle-w3l text-center mb-lg-5 mb-3">
-                    <span>Visit</span>Welcome To Our Site</h3>
+                    <span>Our</span>Team</h3>
                 <div class="row mt-5">
-                    <div class="col-lg-6 about-img">
-                        <img src="images/func1.jpg" alt="" class="img-fluid">
+                    <div class="col-lg-3 member-main-wthreelayouts text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="member-img">
+                                    <img src="images/team1.jpg" alt=" " class="img-fluid rounded-circle">
+                                </div>
+                                <div class="member-info text-center py-lg-4 py-2">
+                                    <h4>Mark Jackman</h4>
+
+                                    <p class="my-4"> Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros.</p>
+                                    <div class="mt-3 team-social text-center">
+
+                                        <ul class="social-icons text-center">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mx-3">
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 aboutright">
-                        <h3>Get Permission for Events</h3>
-                        <h3> for Successful Hosting.</h3>
-                        <h4>Design is so simple that's why it is so complicated</h4>
-                        <p>Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when
-                            an unknown printer took a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet malesuada
-                            mollis. Mauris porroinit consectetur cursus tortor vel interdum. Suspendisse interdum velit vel
-                            qu dapibus condimentum. Pellentesque consequat.</p>
-                        <div class="read inner mt-4">
-						<a href="about.html" class="btn btn-sm animated-button victoria-two">Read More</a>
-					</div>
+                    <div class="col-lg-3 member-main-wthreelayouts text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="member-img">
+                                    <img src="images/team2.jpg" alt=" " class="img-fluid rounded-circle">
+                                </div>
+                                <div class="member-info text-center py-lg-4 py-2">
+                                    <h4>Janet Levine</h4>
+
+                                    <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
+
+                                    </p>
+                                    <div class="mt-3 team-social text-center">
+
+                                        <ul class="social-icons text-center">
+
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mx-3">
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 member-main-wthreelayouts text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="member-img">
+                                    <img src="images/team3.jpg" alt=" " class="img-fluid rounded-circle">
+                                </div>
+                                <div class="member-info text-center py-lg-4 py-2">
+                                    <h4>Rene Rickman</h4>
+
+                                    <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
+
+                                    </p>
+                                    <div class="mt-3 team-social text-center">
+
+                                        <ul class="social-icons text-center">
+
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mx-3">
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 member-main-wthreelayouts text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="member-img">
+                                    <img src="images/team4.jpg" alt=" " class="img-fluid rounded-circle">
+                                </div>
+                                <div class="member-info text-center py-lg-4 py-2">
+                                    <h4>Daniele Norwich</h4>
+                                    <p class="my-4">Aenean orci erat, placerat id pulvinar nec, tincidunt vel eros..
+                                    </p>
+                                    <div class="mt-3 team-social text-center">
+
+                                        <ul class="social-icons text-center">
+
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="mx-3">
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                  
             </div>
         </div>
     </section>
- 
-    <!--//courses-->
-    <section class="banner-bottom-w3layouts py-lg-5 py-lg-4 py-4">
-        <div class="container">
-            <div class="inner-sec-wthree-w3ls py-lg-4 py-4">
-                <h3 class="tittle-w3l text-center mb-lg-5 mb-3">
-                    <span>Visit</span>Explore Venues</h3>
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="cource-box-info text-center rounded">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="images/semi.jpg" alt="seminar" class="img-fluid">
-                                    <h5 class="card-title mt-3">Seminar Hall
-                                    </h5>
-                                   <!-- <p class="card-text">
-                                        <i class="fas fa-map-marker-alt"></i> New York City</p>
-                                        <ul class="property-box">
-                                            <li class="field-item text-left">
-                                                
-                                                <i class="fas fa-users"></i> 195 </li>
-                                            <li class="field-item text-right">
-    
-                                                <i class="far fa-comments"></i> 26 </li>
-                                        </ul>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cource-box-info text-center rounded">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="images/mphall.jpg" alt="Collegien" class="img-fluid">
-                                    <h5 class="card-title mt-3">MP Hall
-                                    </h5>
-                                  <!--  <p class="card-text">
-                                        <i class="fas fa-map-marker-alt"></i> New York City</p>
-                                        <ul class="property-box">
-                                            <li class="field-item text-left">
-                                                
-                                                <i class="fas fa-users"></i> 155 </li>
-                                            <li class="field-item text-right">
-    
-                                                <i class="far fa-comments"></i> 15 </li>
-                                        </ul>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cource-box-info text-center rounded">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="images/nlh.jpg" alt="nlh" class="img-fluid">
-                                    <h5 class="card-title mt-3">NLH
-                                    </h5>
-                                <!--    <p class="card-text">
-                                        <i class="fas fa-map-marker-alt"></i> New York City</p>
-                                        <ul class="property-box">
-                                            <li class="field-item text-left">
-                                                
-                                                <i class="fas fa-users"></i> 155 </li>
-                                            <li class="field-item text-right">
-    
-                                                <i class="far fa-comments"></i> 25 </li>
-                                        </ul>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cource-box-info text-center rounded">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="images/ground.jpg" alt="ground" class="img-fluid">
-                                    <h5 class="card-title mt-3">Gymkhana Ground
-                                    </h5>
-                                 <!--   <p class="card-text">
-                                        <i class="fas fa-map-marker-alt"></i> New York City</p>
-                                        <ul class="property-box">
-                                            <li class="field-item text-left">
-                                                
-                                                <i class="fas fa-users"></i> 255 </li>
-                                            <li class="field-item text-right">
-    
-                                                <i class="far fa-comments"></i> 15 </li>
-                                        </ul>-->
-                    <!--            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cource-box-info text-center rounded">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="images/NLH2.jpg" alt="Collegien" class="img-fluid">
-                                    <h5 class="card-title mt-3">NLH2
-                                    </h5> -->
-                                  <!--  <p class="card-text">
-                                        <i class="fas fa-map-marker-alt"></i> New York City</p>
-                                        <ul class="property-box">
-                                            <li class="field-item text-left">
-                                                
-                                                <i class="fas fa-users"></i> 395 </li>
-                                            <li class="field-item text-right">
-    
-                                                <i class="far fa-comments"></i> 25 </li>
-                                        </ul>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cource-box-info text-center rounded">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="images/CricketGround2.jpg" alt="Collegien" class="img-fluid">
-                                    <h5 class="card-title mt-3">Cricket Ground
-                                    </h5>
-                                  <!--  <p class="card-text">
-                                        <i class="fas fa-map-marker-alt"></i> New York City</p>
-                                    <ul class="property-box">
-                                        <li class="field-item text-left">
-                                            
-                                            <i class="fas fa-users"></i> 355 </li>
-                                        <li class="field-item text-right">
-
-                                            <i class="far fa-comments"></i> 25 </li>
-                                    </ul>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
- 
-   <!-- footer -->
+    <!--//banner-bottom-w3layouts-->
+   
+    <!-- footer -->
+<!-- footer -->
 <section class="footer py-5">
 	<div class="footer-top-w3layouts py-lg-3">
 		<div class="container">
@@ -278,11 +269,11 @@
                 <div class="col-lg-2 col-md-6 col-sm-5 mt-lg-0 mt-sm-5 mt-4 footer-grid links text-left">
 					<h3 class="mb-4"> links </h3>
 					<ul>
-						<li>
+						<!--<li>
 							<a href="Home.aspx">Home</a>
-						</li>
+						</li> -->
 						<li>
-							<a href="About.aspx">About</a>
+							<a href="Index.aspx">Home</a>
 						</li>
 						
 						<li>
@@ -305,14 +296,7 @@
 						<li><strong>Mail</strong> : <a href="mailto:info@example.com">permissionportal@gmail.com</a></li>
 					</ul>
 				</div>
-				 <div class="col-lg-3 col-md-6 mt-md-0 mt-sm-5 mt-4 edu-footer-grid text-left">
-					<h3 class="mb-4">Get Event News </h3>
-					<form action="#" method="post">
-						<input type="text" name="text" placeholder="Name" required="" />
-						<input type="email" name="Email" placeholder="Email" required="" />
-						<input type="submit" value="Subscribe" />
-					</form>
-				</div>
+				
 
 
 			</div>
@@ -326,8 +310,6 @@
     <p>© 2018 PermissionPortal. All rights reserved </p>
 	
 </div>
-<!-- //copyright -->
-
 
     <!--model-forms-->
     <!--/Login-->
@@ -522,7 +504,5 @@
     </script>
     <!--// end-smoth-scrolling -->
 </body>
+
 </html>
-
-
-<!--hello world new one-->
