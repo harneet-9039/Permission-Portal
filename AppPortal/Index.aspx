@@ -42,30 +42,28 @@
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-6 course-left">
                         <h3 class="course">
-                            Get reduced fee
-                            <br> during this Summer!
+                            Confused about</h3>
+                        <h3 class="course">
+                            the Venue !
                         </h3>
                         <p class="para my-4">
-                            Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when an unknown printer took
-                            a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet..
-                        </p>
+                            Different programmes of different departments are conducted at these venues. So it is difficult to keep track of which venue is available when you wish to conduct a programme.</p>
                         <div class="row course-details-content">
                             <div class="col course-detials-inner-info">
 
                                 <a href="#">
-                                    <h4>Expert Instructors</h4>
+                                    <h4>Book venue of your choice</h4>
                                 </a>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod.
-                                </p>
+                                    Select a venue from the list of available venues. Things made easy , Isn&#39;t it !</p>
                             </div>
                             <div class="col course-detials-inner-info">
 
                                 <a href="#">
-                                    <h4>Certification</h4>
+                                    <h4>Login if you find suitable venue</h4>
                                 </a>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod.
+                                    No need to login to check available venues. Saves pretty much of your time....
                                 </p>
                             </div>
                         </div>

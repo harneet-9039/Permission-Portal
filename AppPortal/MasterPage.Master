@@ -33,7 +33,7 @@
         <!--/nav-->
         <div class="top_nav">
             <h1>
-                <a class="logo" href="Index.aspx">PermissionPortal</a>
+                <a href="Index.aspx"><img src="images/logo1.png" style="height:126px; width:404px;"/></a>
             </h1>
             <div class="top-btns">
                 <div class="sign-btn">
