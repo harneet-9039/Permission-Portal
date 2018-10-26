@@ -1,3 +1,6 @@
 .vs/config
 /packages/
+AppPortal/obj/
+AppPortal/Properties/
+AppPortal/bin/
 /.vs/AppPortal/v15/Server/sqlite3
