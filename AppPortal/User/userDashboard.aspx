@@ -130,7 +130,7 @@
                   <i class="material-icons">notifications</i>
                   <span class="notification"></span>
                   <p class="d-lg-none d-md-block">
-                    Some Actions
+                    Notifications
                   </p>
                 </a>
               </li>
@@ -180,11 +180,27 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Select Venue</label>
-                          <!--<input type="text" class="form-control">-->
-                          <asp:DropDownList ID="venue_txt" runat="server" class="form-control">
+               <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <input type="text" class="form-control nav-item dropdown">
+                  </a>       <!-- <asp:DropDownList ID="venue_txt" runat="server" class="form-control dropdown-menu dropdown-menu-right">
                               <asp:ListItem Value="">1</asp:ListItem>
-                          </asp:DropDownList>
-                            
+                          </asp:DropDownList>-->
+                          <!--<li class="nav-item dropdown">
+                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">notifications</i>
+                  <span class="notification"></span>
+                  <p class="d-lg-none d-md-block">
+                    Notifications
+                  </p>
+                </a>-->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
+                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
+                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
+                  <a class="dropdown-item" href="#">Another Notification</a>
+                  <a class="dropdown-item" href="#">Another One</a>
+                </div>
+              <!--</li>-->  
                         </div>
                       </div>
                       <!--<div class="col-md-4">
@@ -256,8 +272,33 @@
                         </div>
                       </div>
                     </div>-->
-                    <asp:Button ID="submit_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" />
-                    <div class="clearfix"></div>
+                    <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" OnClick="GenerateButton_Click" />
+                        <asp:Panel ID="ModalPanel" runat="server" CssClass="card col-md-8">
+                         ASP.NET AJAX is a free framework for quickly creating a new generation of more 
+                         efficient, more interactive and highly-personalized Web experiences that work 
+                         across all the most popular browsers.<br />
+                         <div class="row">
+                         <asp:Button ID="edit_btn" runat="server" Text="Edit" class="btn btn-primary pull-right"/>
+                         <asp:Button ID="submit_btn" runat="server" Text="Submit" class="btn btn-primary pull-right"/>
+                         </div>
+                        </asp:Panel>
+                        <ajaxToolkit:ModalPopupExtender ID="mpe" runat="server" TargetControlId="generate_btn" 
+                         PopupControlID="ModalPanel" OkControlID="edit_btn" />
+                        <asp:ScriptManager ID="asm" runat="server" />
+                        <script runat="server">
+                         protected void GenerateButton_Click(object sender, EventArgs e)
+                         {
+                         ClientScript.RegisterStartupScript(this.GetType(), "key", "launchModal();", true);
+                         }
+                        </script>
+                        <script type="text/javascript">
+                         var launch = false;
+                         function launchModal() 
+                         {
+                         launch = true;
+                         }
+                        </script>
+                      <div class="clearfix"></div>
                       
                   </form>
                 </div>
