@@ -19,11 +19,16 @@
   <link href="../User/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../User/assets/demo/demo.css" rel="stylesheet" />
-  <!--  jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-  <link href="../User/bootstrap-datepicker/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="../User/bootstrap-datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+  	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/dist/material-datetime-picker.css?version=1" rel="stylesheet" />
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+   
+    
+
 </head>
 
 <body class="">
@@ -97,7 +102,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#">Hello, <asp:Label ID="username_txt"></asp:Label></a>
+            <a class="navbar-brand" href="#">Hello, <asp:Label ID="username_txt" runat="server"></asp:Label></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -149,7 +154,7 @@
                       User
                   </p>
                 </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink_sec">
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Log Out</a>
                 </div>
@@ -158,11 +163,16 @@
           </div>
         </div>
       </nav>
+      
       <!-- End Navbar -->
 <div class="content">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
+             <a class="c-btn c-datepicker-btn">
+                        <span class="material-icon">Click me</span>
+                        </a>
+                        <pre id="output"></pre>
               <div class="card">
                <div class="card-header card-header-primary">
                   <h4 class="card-title">New Application</h4>
@@ -176,6 +186,8 @@
                           <label class="bmd-label-floating">Purpose of Application</label>
                           <asp:Textbox ID="purpose_txt" runat="server" class="form-control"></asp:Textbox>
                         </div>
+                       
+
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
@@ -200,27 +212,32 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="control-label" for="date">From</label>
-                          <asp:TextBox ID="date1" runat="server" class="form-control"></asp:TextBox>
-                           <!-- <asp:Calendar ID="datepicker1" runat="server" Visible="false" ForeColor="Maroon" OnSelectionChanged="datepicker1_SelectionChanged" BackColor="#CC6600">
-                              <DayHeaderStyle BackColor="#FFCC00" BorderColor="#990000" />
-                              <DayStyle BackColor="#FFC891" />
-                              <NextPrevStyle BackColor="#CC6600" ForeColor="#FFCC00" />
-                              <TitleStyle BackColor="#CC6600" />
-                            </asp:Calendar>
-                          <asp:LinkButton ID="select_date1" runat="server" OnClick="lnkpickdate_Click1">Date</asp:LinkButton>-->
+                          <asp:TextBox ID="date1" runat="server" class="form-control c-datepicker-input"></asp:TextBox>
+                          
                         </div>
                       </div>
                         <div class="col-md-6">
                         <div class="form-group">
                           <label class="control-label" for="date">To</label>
-                          <asp:TextBox ID="date2" runat="server" class="form-control"></asp:TextBox>
-                         <!-- <asp:Calendar ID="datepicker2" runat="server" Visible="false" ForeColor="Maroon" OnSelectionChanged="datepicker2_SelectionChanged" BackColor="#CC6600">
-                              <DayHeaderStyle BackColor="#FFCC00" BorderColor="#990000" />
-                              <DayStyle BackColor="#FFC891" />
-                              <NextPrevStyle BackColor="#CC6600" ForeColor="#FFCC00" />
-                              <TitleStyle BackColor="#CC6600" />
-                            </asp:Calendar>
-                          <asp:LinkButton ID="select_date2" runat="server" OnClick="lnkpickdate_Click2">Date</asp:LinkButton>-->
+                          <asp:TextBox ID="date2" runat="server" class="form-control c-datepicker-input-to"></asp:TextBox>
+                       
+                        </div>
+                      </div>
+                    </div>
+                     <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                       
+                          <label class="control-label" for="date">Time (From)</label>
+                          <asp:TextBox ID="timepicker_txt" runat="server" class="form-control"></asp:TextBox>
+                          
+                        </div>
+                      </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="control-label" for="date">Time (To)</label>
+                          <asp:TextBox ID="timepicker_to_txt" runat="server" class="form-control"></asp:TextBox>
+                       
                         </div>
                       </div>
                     </div>
@@ -303,8 +320,8 @@
       </footer>
     </div>
 </div>
-  <!--   Core JS Files   -->
-  <script src="../User/assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <!--   Core JS Files   
+  <script src="../User/assets/js/core/jquery.min.js" type="text/javascript"></script>-->
   <script src="../User/assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../User/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="../User/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
@@ -325,42 +342,48 @@
 
     });
   </script>  
-<script type="text/javascript" src="../User/bootstrap-datepicker/jquery-1.8.3.min.js" charset="UTF-8"></script>
-<script type="text/javascript" src="../User/bootstrap-datepicker/bootstrap.min.js"></script>
-<script type="text/javascript" src="../User/bootstrap-datepicker/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-<script type="text/javascript" src="../User/bootstrap-datepicker/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
-<script type="text/javascript">
-    $('.form_datetime').datetimepicker({
-        //language:  'fr',
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		forceParse: 0,
-        showMeridian: 1
-    });
-	$('.form_date').datetimepicker({
-        language:  'fr',
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		minView: 2,
-		forceParse: 0
-    });
-	$('.form_time').datetimepicker({
-        language:  'fr',
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 1,
-		minView: 0,
-		maxView: 1,
-		forceParse: 0
-    });
-</script>  
+  <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="assets/dist/material-datetime-picker.js"></script>
+
+<script>
+    const el = document.querySelector('.c-datepicker-input');
+    const picker = new MaterialDatetimePicker({})
+ 
+      .on('submit', (d) => {
+    
+          el.value = d.format("DD/MM/YYYY");
+      
+      });
+    el.addEventListener('focus', () => {
+        
+        picker.open();
+        
+    }, false);
+
+    const ele = document.querySelector('.c-datepicker-input-to');
+    const picker_chk = new MaterialDatetimePicker({})
+ 
+      .on('submit', (d) => {
+    
+          ele.value = d.format("DD/MM/YYYY");
+      
+      });
+    ele.addEventListener('focus', () => {
+        
+        picker_chk.open();
+        
+    }, false);
+
+</script>
+<script>
+   
+    $('#timepicker_txt').timepicker();
+    $('#timepicker_to_txt').timepicker();
+    </script>
+
 </body>
 </html>

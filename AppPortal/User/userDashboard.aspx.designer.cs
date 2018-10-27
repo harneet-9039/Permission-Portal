@@ -13,6 +13,15 @@ namespace AppPortal.User {
     public partial class userDashboard {
         
         /// <summary>
+        /// username_txt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label username_txt;
+        
+        /// <summary>
         /// purpose_txt control.
         /// </summary>
         /// <remarks>
@@ -40,24 +49,6 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox date1;
         
         /// <summary>
-        /// datepicker1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar datepicker1;
-        
-        /// <summary>
-        /// select_date1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton select_date1;
-        
-        /// <summary>
         /// date2 control.
         /// </summary>
         /// <remarks>
@@ -67,22 +58,22 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox date2;
         
         /// <summary>
-        /// datepicker2 control.
+        /// timepicker_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar datepicker2;
+        protected global::System.Web.UI.WebControls.TextBox timepicker_txt;
         
         /// <summary>
-        /// select_date2 control.
+        /// timepicker_to_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton select_date2;
+        protected global::System.Web.UI.WebControls.TextBox timepicker_to_txt;
         
         /// <summary>
         /// start_date control.

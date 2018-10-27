@@ -179,8 +179,6 @@
     <Content Include="User\acceptedApplications.aspx" />
     <Content Include="User\assets\css\material-dashboard.css" />
     <Content Include="User\assets\css\material-dashboard.min.css" />
-    <Content Include="User\assets\demo\demo.css" />
-    <Content Include="User\assets\demo\demo.js" />
     <Content Include="User\assets\img\apple-icon.png" />
     <Content Include="User\assets\img\cover.jpg" />
     <Content Include="User\assets\img\faces\avatar.jpg" />
@@ -520,6 +518,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="User\assets\dist\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
