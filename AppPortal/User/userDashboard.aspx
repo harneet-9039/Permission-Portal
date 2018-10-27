@@ -169,10 +169,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-             <a class="c-btn c-datepicker-btn">
-                        <span class="material-icon">Click me</span>
-                        </a>
-                        <pre id="output"></pre>
+             
               <div class="card">
                <div class="card-header card-header-primary">
                   <h4 class="card-title">New Application</h4>
