@@ -9,10 +9,19 @@ namespace AppPortal.User
 {
     public partial class userDashboard : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             
         }
-       
+
+        protected void generate_btn_Click(object sender, EventArgs e)
+        {
+           // ClientScript.RegisterStartupScript(this.GetType(), "key", "blur();", true);
+            ModalPanel.Enabled = true;
+            mpe.Show();
+            //modalbackground.show();
+        }
+
     }
 }

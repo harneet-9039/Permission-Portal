@@ -19,6 +19,11 @@
   <link href="../User/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../User/assets/demo/demo.css" rel="stylesheet" />
+<!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+  <link href="../User/bootstrap-datepicker/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="../User/bootstrap-datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen" />
 </head>
 
 <body class="">
