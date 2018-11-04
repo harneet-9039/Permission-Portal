@@ -19,19 +19,35 @@
   <link href="../User/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../User/assets/demo/demo.css" rel="stylesheet" />
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-  
+  <link href="../User/bootstrap-datepicker/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="../User/bootstrap-datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
   	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/dist/material-datetime-picker.css?version=1" rel="stylesheet" />
-
-    
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
    
-    
-
+<style type="text/css">
+.modalBackground 
+{
+    height:100%;
+    background-color:#EBEBEB;
+    filter:alpha(opacity=70);
+    opacity:0.8;
+}
+ </style> 
+<script type="text/javascript">
+function pageLoad() {
+            var mpe = $find("MPE");
+            mpe.add_shown(onShown);
+        }
+        function onShown() {
+            var background = $find("MPE")._backgroundElement;
+            background.onclick = function () { $find("MPE").hide(); }
+        }
+</script>
 </head>
 
 <body class="">
@@ -138,7 +154,7 @@
                   <i class="material-icons">notifications</i>
                   <span class="notification"></span>
                   <p class="d-lg-none d-md-block">
-                    Some Actions
+                    Notifications
                   </p>
                 </a>
               
@@ -157,7 +173,7 @@
                       User
                   </p>
                 </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink_sec">
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Log Out</a>
                 </div>
@@ -192,11 +208,27 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Select Venue</label>
-                          <!--<input type="text" class="form-control">-->
-                          <asp:DropDownList ID="venue_txt" runat="server" class="form-control">
-                              <asp:ListItem Value="">1</asp:ListItem>
+               <!--<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <input type="text" class="form-control nav-item dropdown">
+                  </a>--><asp:DropDownList ID="venue_txt" runat="server" class="form-control dropdown-menu dropdown-menu-right">
+                              <asp:ListItem Value="" class="dropdown-item">1</asp:ListItem>
                           </asp:DropDownList>
-                            
+                          <!--<li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">notifications</i>
+                  <span class="notification"></span>
+                  <p class="d-lg-none d-md-block">
+                    Notifications
+                  </p>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
+                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
+                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
+                  <a class="dropdown-item" href="#">Another Notification</a>
+                  <a class="dropdown-item" href="#">Another One</a>
+                </div>-->
+              <!--</li>-->  
                         </div>
                       </div>
                       <!--<div class="col-md-4">
@@ -273,8 +305,31 @@
                         </div>
                       </div>
                     </div>-->
-                    <asp:Button ID="submit_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" />
-                    <div class="clearfix"></div>
+                     
+                    <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" OnClick="generate_btn_Click" />
+                        <asp:Panel ID="ModalPanel" style="display:none;height:80%;" runat="server" CssClass="card col-md-8">
+                         <iframe id="pdfRendered" src="Aishwarya_Resume.pdf" style="height:100%;width:100%;"></iframe><br />
+                         <div class="row">
+                         <asp:Button ID="edit_btn" runat="server" Text="Edit" class="btn btn-primary pull-right"/>
+                         <asp:Button ID="submit_btn" runat="server" Text="Submit" class="btn btn-primary pull-right"/>
+                         </div> 
+                        </asp:Panel>
+                       
+                        <ajaxToolkit:ModalPopupExtender ID="mpe" runat="server" TargetControlId="generate_btn" 
+                         PopupControlID="ModalPanel" OkControlID="edit_btn" CancelControlID="submit_btn"  BackgroundCssClass="modalBackground" BehaviorID="MPE"/>
+                        <asp:scriptmanager id="asm" runat="server"></asp:scriptmanager>
+                      <!--<script type="text/javascript">
+                          function pdf() {
+                              var pdf = new PDFObject({
+                                  url: "https://something.com/HTC_One_XL_User_Guide.pdf",
+                                  id: "pdfRendered",
+                                  pdfOpenParams: {
+                                    view: "FitH"
+                                  }
+                                }).embed("pdfRenderer");
+                          }
+                      </script>-->
+                      <div class="clearfix"></div>
                       
                   </form>
                 </div>
@@ -320,6 +375,7 @@
       </footer>
     </div>
 </div>
+<div id="modalbackground" style=" position: absolute; height:100%; widh:100%; display:none; z-index:10000; background-color: #7F7F7F; opacity: 0.5;"></div>
   <!--   Core JS Files   
   <script src="../User/assets/js/core/jquery.min.js" type="text/javascript"></script>-->
   <script src="../User/assets/js/core/popper.min.js" type="text/javascript"></script>
