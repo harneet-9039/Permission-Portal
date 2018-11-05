@@ -40,42 +40,6 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
         
         /// <summary>
-        /// email_txt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email_txt;
-        
-        /// <summary>
-        /// pwd_txt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pwd_txt;
-        
-        /// <summary>
-        /// Role_ddl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Role_ddl;
-        
-        /// <summary>
-        /// User_pnl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel User_pnl;
-        
-        /// <summary>
         /// name_txt control.
         /// </summary>
         /// <remarks>
@@ -121,13 +85,13 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.TextBox stud_txt;
         
         /// <summary>
-        /// mob_txt control.
+        /// email_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mob_txt;
+        protected global::System.Web.UI.WebControls.TextBox email_txt;
         
         /// <summary>
         /// sign_fld control.
@@ -157,69 +121,6 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.TextBox cpwd_txt;
         
         /// <summary>
-        /// dep_pnl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel dep_pnl;
-        
-        /// <summary>
-        /// Aname_txt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Aname_txt;
-        
-        /// <summary>
-        /// Aemail_txt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Aemail_txt;
-        
-        /// <summary>
-        /// ADep_ddl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ADep_ddl;
-        
-        /// <summary>
-        /// Asign_fld control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload Asign_fld;
-        
-        /// <summary>
-        /// Apwd_txt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Apwd_txt;
-        
-        /// <summary>
-        /// Acpwd_txt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Acpwd_txt;
-        
-        /// <summary>
         /// submit_txt control.
         /// </summary>
         /// <remarks>
@@ -227,5 +128,41 @@ namespace AppPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submit_txt;
+        
+        /// <summary>
+        /// role_ddl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList role_ddl;
+        
+        /// <summary>
+        /// regno_txt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox regno_txt;
+        
+        /// <summary>
+        /// pwd_txt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox pwd_txt;
+        
+        /// <summary>
+        /// Signin_btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Signin_btn;
     }
 }

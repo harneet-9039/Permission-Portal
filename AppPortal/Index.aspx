@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="AppPortal.Home"MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="AppPortal.Home" EnableEventValidation="false" EnableViewState="true" MasterPageFile="~/MasterPage.master" %>
 
 <asp:Content ID="content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <ol class="breadcrumb">
@@ -235,13 +235,7 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker3').datetimepicker({
-                    format: 'LT'
-                });
-            });
-        </script>
+  
   </asp:Content>
 
  
