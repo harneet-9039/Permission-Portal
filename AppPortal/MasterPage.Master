@@ -198,49 +198,71 @@
                                 <label>Full name</label>
 
                                 <asp:TextBox ID="name_txt" class="form-control" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="nameValidator" runat="server" ControlToValidate="name_txt" ErrorMessage="*Please enter your name" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
                             </div>
                             <div class="form-group">
                                 <label>Registration Number</label>
                                 <asp:TextBox ID="reg_txt" class="form-control" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RegValidator" runat="server" ControlToValidate="reg_txt" ErrorMessage="*Please enter your registration number" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
                             </div>
                             
                             <div class="form-group">
                                 <label>Department</label>
                                <asp:TextBox ID="dep_txt" class="form-control" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="DepartmentValidator" runat="server" ControlToValidate="dep_txt" ErrorMessage="*Please enter department" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
                             </div>
 
                              <div class="form-group">
-                                <label>Branch</label>
-                               <asp:TextBox ID="branch_txt" class="form-control" runat="server"></asp:TextBox>
+                                <label>Course</label>
+                               <asp:TextBox ID="course_txt" class="form-control" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="BranchValidator" runat="server" ControlToValidate="course_txt" ErrorMessage="*Please enter your course" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
                             </div>
 
                              <div class="form-group">
                                 <label>Year of Study</label>
                                 <asp:TextBox ID="stud_txt" class="form-control" runat="server"></asp:TextBox>
-                            </div>
+                                 <asp:RequiredFieldValidator ID="YearValidator" runat="server" ControlToValidate="stud_txt" ErrorMessage="*Please enter your year of study" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
+                                 <asp:RangeValidator ID="YearNoValidator" runat="server" ErrorMessage="*Enter a valid year" ControlToValidate="stud_txt" Type="Integer" MinimumValue="1" MaximumValue="4" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RangeValidator>
+                             </div>
                             
                              <div class="form-group">
                                 <label>Email</label>
                                 <asp:TextBox ID="email_txt" class="form-control" runat="server"></asp:TextBox>
+                                 <asp:RequiredFieldValidator ID="EmailValidator" runat="server" ControlToValidate="email_txt" ErrorMessage="*Please enter email" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
+                                 <asp:RegularExpressionValidator ID="EmailPatternValidator" runat="server" ControlToValidate="email_txt" ErrorMessage="*E-mail address must be in the format of name@domain.xyz." SetFocusOnError="true" ValidationGroup="Register" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic" ForeColor="Red"></asp:RegularExpressionValidator>
                             </div>
 
                              <div class="form-group">
                                 <label>Scanned Signature (.png/.jpeg)</label>
                               
-                     <asp:FileUpload ID="sign_fld" class="form-control" runat="server" />
-                            </div>
+                                <asp:FileUpload ID="sign_fld" class="form-control" runat="server" />
+                                 <asp:RequiredFieldValidator Id="FileValidator" ErrorMessage="*Signature Required" ControlToValidate="sign_fld"
+                                    runat="server" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register" />
+                                <asp:RegularExpressionValidator ID="FileFormat" ValidationExpression="([a-zA-Z0-9\s_\\.\-:])+(.png|.jpg|.jpeg)$"
+                                    ControlToValidate="sign_fld" runat="server" ForeColor="Red" ErrorMessage="*Select a valid format,i.e,jpg or png"
+                                    Display="Dynamic" SetFocusOnError="true" ValidationGroup="Register" />
+                                
+                             </div>
 
                             <div class="form-group">
                                 <label class="mb-2">Password</label>
                                <asp:TextBox ID="pwdr_txt" TextMode="Password" class="form-control" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="PasswordValidator" runat="server" ControlToValidate="pwdr_txt" ErrorMessage="*Password is required!" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
                             </div>
                             <div class="form-group">
                                 <label>Confirm Password</label>
                                 <asp:TextBox ID="cpwd_txt" TextMode="Password" class="form-control" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="ConfirmPasswordValidator" runat="server" ControlToValidate="cpwd_txt" ErrorMessage="*Password confirmation is required!" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Register"></asp:RequiredFieldValidator>
+                                <asp:CompareValidator id="ComparePasswords" 
+                                  runat="server"
+                                  ControlToCompare="pwdr_txt"
+                                  ControlToValidate="cpwd_txt"
+                                  ErrorMessage="Your passwords do not match up!"
+                                  Display="Dynamic" ForeColor="Red" ValidationGroup="Register" />
                             </div>
                           
                             <div class="form-group">
-                 <asp:Button ID="submit_txt" class="btn btn-primary submit mb-4" OnClick="submit_txt_Click" UseSubmitBehavior="false" runat="server" Text="Register" />
+                 <asp:Button ID="submit_txt" class="btn btn-primary submit mb-4" OnClick="submit_txt_Click" UseSubmitBehavior="false" runat="server" Text="Register" CausesValidation="true" ValidationGroup="Register" />
                             <p class="text-center pb-4">
                                 <a href="#">By clicking Register, I agree to your terms</a>
                             </p>
@@ -269,23 +291,25 @@
                          <div class="form-group">
                                 <label class="mb-2">Select Role</label>
                              <asp:DropDownList ID="role_ddl" CssClass="form-control" runat="server"></asp:DropDownList>
-                               
+                               <asp:RequiredFieldValidator ID="RoleValidator" runat="server" ControlToValidate="role_ddl" ErrorMessage="*Select a role" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Login"></asp:RequiredFieldValidator>
                             </div>
                             <div class="form-group">
                                 <label class="mb-2">Registration Number</label>
                                <!-- <input type="email" class="form-control" id="exampleInputEmail1" 
                                aria-describedby="emailHelp" placeholder="" required="">-->
          <asp:TextBox ID="regno_txt" class="form-control" aria-describedby="emailHelp" runat="server"></asp:TextBox>
+                                 <asp:RequiredFieldValidator ID="RegnoValidator" runat="server" ControlToValidate="regno_txt" ErrorMessage="*Enter your registration number" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Login"></asp:RequiredFieldValidator>
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your registration number with anyone else.</small>
                             </div>
                             <div class="form-group">
                                 <label class="mb-2">Password</label>
                                 <!--<input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">-->
              <asp:TextBox ID="pwd_txt" TextMode="Password" class="form-control" runat="server"></asp:TextBox>
+                                 <asp:RequiredFieldValidator ID="PwdValidator" runat="server" ControlToValidate="pwd_txt" ErrorMessage="*Enter your password" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Login"></asp:RequiredFieldValidator>
 
                             </div>
                             <div class="form-group">
-                            <asp:Button ID="Signin_btn" OnClick="Signin_btn_Click1" CssClass="btn btn-primary mb-4" UseSubmitBehavior="false" runat="server" Text="Sign In" />
+                            <asp:Button ID="Signin_btn" OnClick="Signin_btn_Click1" CssClass="btn btn-primary mb-4" UseSubmitBehavior="false" runat="server" Text="Sign In" causesvalidation="true" ValidationGroup="Login" />
                             </div>
                            
                       

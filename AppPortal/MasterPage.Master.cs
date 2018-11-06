@@ -14,7 +14,7 @@ namespace AppPortal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             if (Page.IsPostBack) return;
             FillRole();
         }
@@ -38,7 +38,7 @@ namespace AppPortal
             
             string fileName = Path.GetFileName(sign_fld.PostedFile.FileName);
             sign_fld.PostedFile.SaveAs(Server.MapPath("~/Content/") + fileName);
-            object Result = RU.RegisterUser(reg_txt.Text, name_txt.Text, branch_txt.Text, dep_txt.Text, stud_txt.Text, "~/Content/" + fileName, email_txt.Text, pwdr_txt.Text);
+            object Result = RU.RegisterUser(reg_txt.Text, name_txt.Text, course_txt.Text, dep_txt.Text, stud_txt.Text, "~/Signature/User/" + fileName, email_txt.Text, pwdr_txt.Text);
 
             Boolean chk = Convert.ToBoolean(Result);
             if(chk==true) {
@@ -69,6 +69,7 @@ namespace AppPortal
             }
         }
 
-        
+       
+
     }
 }
