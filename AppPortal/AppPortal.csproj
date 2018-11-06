@@ -169,6 +169,7 @@
     <Content Include="Portal.xsc">
       <DependentUpon>Portal.xsd</DependentUpon>
     </Content>
+    <Content Include="Content\AbstractTemplate.pdf" />
     <None Include="Portal.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>

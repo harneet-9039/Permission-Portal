@@ -21,6 +21,7 @@
   <link href="../User/assets/demo/demo.css" rel="stylesheet" />
 <!--  jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
   <link href="../User/bootstrap-datepicker/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="../User/bootstrap-datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
@@ -28,7 +29,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/dist/material-datetime-picker.css?version=1" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-   
+    <script type="text/javascript">
+    function openModal() {
+        $('#exampleModalCenter').modal('show');
+    }
+</script>
+ <script type="text/javascript">
+    function openModalApp() {
+        $('#ApplicationModal').modal('show');
+    }
+</script>
 <style type="text/css">
 .modalBackground 
 {
@@ -37,6 +47,8 @@
     filter:alpha(opacity=70);
     opacity:0.8;
 }
+
+
  </style> 
 <script type="text/javascript">
 function pageLoad() {
@@ -216,14 +228,15 @@ function pageLoad() {
                         <div class="form-group">
                           <label class="control-label" for="date">From</label>
                           <asp:TextBox ID="date1" runat="server" class="form-control c-datepicker-input"></asp:TextBox>
-                          
+                            <asp:CustomValidator ID="cstvalid" ControlToValidate="date1" OnServerValidate="cstvalid_ServerValidate" ForeColor="Red" ValidationGroup="Error" runat="server" ErrorMessage="* Date cannot be before current date"></asp:CustomValidator>
                         </div>
                       </div>
                         <div class="col-md-6">
                         <div class="form-group">
                           <label class="control-label" for="date">To</label>
                           <asp:TextBox ID="date2" runat="server" class="form-control c-datepicker-input-to"></asp:TextBox>
-                       
+                        <asp:CustomValidator ID="cstvalidto" ControlToValidate="date2" OnServerValidate="cstvalidto_ServerValidate" ForeColor="Red" ValidationGroup="Error" runat="server" ErrorMessage="* Date cannot be before current date"></asp:CustomValidator>
+
                         </div>
                       </div>
                     </div>
@@ -277,7 +290,7 @@ function pageLoad() {
                       </div>
                     </div>-->
                      
-                    <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" OnClick="generate_btn_Click" />
+                    <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" ValidationGroup="Error" CausesValidation="true" OnClick="generate_btn_Click" />
                         <asp:Panel ID="ModalPanel" style="display:none;height:80%;" runat="server" CssClass="card col-md-8">
                         <!-- <iframe id="pdfRendered" src="Aishwarya_Resume.pdf" style="height:100%;width:100%;"></iframe><br />-->
                          <div class="row">
@@ -308,6 +321,101 @@ function pageLoad() {
             </div>
           </div>
         </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="login px-4 mx-auto mw-100">
+                        
+                       <h5><asp:Label ID="error_lbl" class="text-center mb-4" runat="server" Text=""></asp:Label></h5>
+                            <!--<iframe id="urIframe" style="width:100%; height:500px" runat="server"></iframe>-->
+
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+      <div class="modal fade" id="ApplicationModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        
+                    </button>
+                     
+                </div>
+                <div class="modal-body" >
+
+                    <div class="login px-4 mx-auto mw-100" style="border:solid;padding:5px">
+                       <h5 class="text-center mb-4"><b><u>Generated Application</u></b></h5>
+                       <br /><br />
+                     
+                        <asp:Panel ID="App_pnl" style="font-size:13px" runat="server">
+                        <div class="row">
+                        To,
+                        </div>
+                        <div class="row">
+                            <asp:Label ID="dept_lbl" runat="server" Text=""></asp:Label>&nbsp;Department
+                        </div>
+                        <div class="row">
+                        MNNIT, Allahabad.
+                        </div>
+                        <br />
+                        <div class="row">
+                        Date:&nbsp;&nbsp;
+                        <asp:Label ID="date_lbl" runat="server" Text=""></asp:Label>
+                        </div>
+                        <br />
+                        <div class="row">
+                        Subject: Requesting Permission for &nbsp; <asp:Label ID="subdept_lbl" runat="server" Text=""></asp:Label>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                        Sir/Mam,
+                        </div>
+                        <br />
+                        <div class="row">
+                          
+                            <asp:Label ID="container_lbl" runat="server" Text="">
+                        My name is&nbsp;<asp:Label ID="appname_lbl" runat="server" Text=""></asp:Label>,&nbsp;
+                        Registration Number:&nbsp;<b><asp:Label ID="reg_lbl" runat="server" Text=""></asp:Label></b> 
+                        of <asp:Label ID="course_yr_lbl" runat="server" Text=""></asp:Label>. I request you to provide me with 
+                        permission for the venue, i.e&nbsp;<b><asp:Label ID="venue_lbl" runat="server" Text=""></asp:Label></b>&nbsp;from 
+                        <asp:Label ID="dateapp_lbl" runat="server" Text=""></asp:Label>,&nbsp;<asp:Label ID="time_lbl" runat="server" Text=""></asp:Label>
+                        for&nbsp;<b><asp:Label ID="reason_lbl" runat="server" Text=""></asp:Label>.</b>
+                        <br />
+                        Kindly grant the permission for the same. I would be grateful to you.
+                        <br /><br />
+                        Thanking You,<br /><br />
+                        Yours Sincerely,
+                        <br /><br />
+                                <asp:Label ID="Nameapp_lbl" runat="server" Text=""></asp:Label><br />
+                                 <asp:Label ID="RegNo_lbl" runat="server" Text=""></asp:Label><br />
+                                <asp:Image ID="Sign_lbl" runat="server" style="width:10%;height:10%" />
+                        </asp:Label>
+                        </div>
+                        </asp:Panel>
+                        
+                         </div>
+                          <div class="row" style="justify-content:flex-end">
+                         <asp:Button ID="editapp_btn" runat="server" Text="Edit" class="btn btn-primary "/>&nbsp;&nbsp;&nbsp;
+                         <asp:Button ID="submitapp_btn" runat="server" Text="Submit" class="btn btn-primary "/>
+                         </div> 
+                    </div>
+                </div>
+         </div>
     </div>
     <footer class="footer">
         <div class="container-fluid">
@@ -347,7 +455,7 @@ function pageLoad() {
     </div>
 </div>
 </form>
-<div id="modalbackground" style=" position: absolute; height:100%; widh:100%; display:none; z-index:10000; background-color: #7F7F7F; opacity: 0.5;"></div>
+<div id="modalbackground" style=" position: absolute; height:100%; width:100%; display:none; z-index:10000; background-color: #7F7F7F; opacity: 0.5;"></div>
   <!--   Core JS Files   
   <script src="../User/assets/js/core/jquery.min.js" type="text/javascript"></script>-->
   <script src="../User/assets/js/core/popper.min.js" type="text/javascript"></script>
