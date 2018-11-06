@@ -49,6 +49,15 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.TextBox name_txt;
         
         /// <summary>
+        /// nameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameValidator;
+        
+        /// <summary>
         /// reg_txt control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace AppPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox reg_txt;
+        
+        /// <summary>
+        /// RegValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RegValidator;
         
         /// <summary>
         /// dep_txt control.
@@ -67,13 +85,31 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.TextBox dep_txt;
         
         /// <summary>
-        /// branch_txt control.
+        /// DepartmentValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox branch_txt;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DepartmentValidator;
+        
+        /// <summary>
+        /// course_txt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox course_txt;
+        
+        /// <summary>
+        /// BranchValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator BranchValidator;
         
         /// <summary>
         /// stud_txt control.
@@ -85,6 +121,24 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.TextBox stud_txt;
         
         /// <summary>
+        /// YearValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator YearValidator;
+        
+        /// <summary>
+        /// YearNoValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator YearNoValidator;
+        
+        /// <summary>
         /// email_txt control.
         /// </summary>
         /// <remarks>
@@ -92,6 +146,24 @@ namespace AppPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox email_txt;
+        
+        /// <summary>
+        /// EmailValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailValidator;
+        
+        /// <summary>
+        /// EmailPatternValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EmailPatternValidator;
         
         /// <summary>
         /// sign_fld control.
@@ -103,6 +175,24 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.FileUpload sign_fld;
         
         /// <summary>
+        /// FileValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FileValidator;
+        
+        /// <summary>
+        /// FileFormat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator FileFormat;
+        
+        /// <summary>
         /// pwdr_txt control.
         /// </summary>
         /// <remarks>
@@ -112,6 +202,15 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.TextBox pwdr_txt;
         
         /// <summary>
+        /// PasswordValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordValidator;
+        
+        /// <summary>
         /// cpwd_txt control.
         /// </summary>
         /// <remarks>
@@ -119,6 +218,24 @@ namespace AppPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox cpwd_txt;
+        
+        /// <summary>
+        /// ConfirmPasswordValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ConfirmPasswordValidator;
+        
+        /// <summary>
+        /// ComparePasswords control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator ComparePasswords;
         
         /// <summary>
         /// submit_txt control.
@@ -139,6 +256,15 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.DropDownList role_ddl;
         
         /// <summary>
+        /// RoleValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RoleValidator;
+        
+        /// <summary>
         /// regno_txt control.
         /// </summary>
         /// <remarks>
@@ -148,6 +274,15 @@ namespace AppPortal {
         protected global::System.Web.UI.WebControls.TextBox regno_txt;
         
         /// <summary>
+        /// RegnoValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RegnoValidator;
+        
+        /// <summary>
         /// pwd_txt control.
         /// </summary>
         /// <remarks>
@@ -155,6 +290,15 @@ namespace AppPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox pwd_txt;
+        
+        /// <summary>
+        /// PwdValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PwdValidator;
         
         /// <summary>
         /// Signin_btn control.
