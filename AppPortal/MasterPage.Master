@@ -272,11 +272,11 @@
                                
                             </div>
                             <div class="form-group">
-                                <label class="mb-2">Registration Number</label>
+                                <label class="mb-2">Login ID</label>
                                <!-- <input type="email" class="form-control" id="exampleInputEmail1" 
                                aria-describedby="emailHelp" placeholder="" required="">-->
          <asp:TextBox ID="regno_txt" class="form-control" aria-describedby="emailHelp" runat="server"></asp:TextBox>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your registration number with anyone else.</small>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your Login ID with anyone else.</small>
                             </div>
                             <div class="form-group">
                                 <label class="mb-2">Password</label>

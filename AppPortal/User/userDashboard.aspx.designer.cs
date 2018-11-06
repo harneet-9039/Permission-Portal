@@ -22,6 +22,24 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.Label username_txt;
         
         /// <summary>
+        /// profile_btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button profile_btn;
+        
+        /// <summary>
+        /// logout_btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button logout_btn;
+        
+        /// <summary>
         /// purpose_txt control.
         /// </summary>
         /// <remarks>
@@ -31,13 +49,13 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox purpose_txt;
         
         /// <summary>
-        /// venue_txt control.
+        /// venue_ddl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList venue_txt;
+        protected global::System.Web.UI.WebControls.DropDownList venue_ddl;
         
         /// <summary>
         /// date1 control.

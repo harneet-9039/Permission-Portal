@@ -14,7 +14,7 @@ namespace AppPortal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
             if (Page.IsPostBack) return;
             FillRole();
         }
@@ -57,11 +57,14 @@ namespace AppPortal
 
             if (chk == "strue")
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Student Login successfully.');window.location='Index.aspx';", true);
+                Session["UserLogin"] = regno_txt.Text;
+                Response.Redirect("~/User/userDashboard.aspx");
+                
             }
             else if (chk == "dtrue")
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Department Login successfully.');window.location='Index.aspx';", true);
+                Session["DeptLogin"] = regno_txt.Text;
             }
             else
             {

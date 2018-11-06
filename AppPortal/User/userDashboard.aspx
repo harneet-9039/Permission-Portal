@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userDashboard.aspx.cs" Inherits="AppPortal.User.userDashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userDashboard.aspx.cs" EnableEventValidation="false" Inherits="AppPortal.User.userDashboard" %>
 
 <!DOCTYPE html>
 
@@ -51,6 +51,7 @@ function pageLoad() {
 </head>
 
 <body class="">
+<form runat="server">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="../User/assets/img/sidebar-1.jpg">
       <!--
@@ -130,16 +131,7 @@ function pageLoad() {
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
          <div class="collapse navbar-collapse justify-content-end">
-           <form class="navbar-form">
-               
-           <!--   <div class="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search...">
-                <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                  <i class="material-icons">search</i>
-                  <div class="ripple-container"></div>
-                </button>
-              </div>-->
-            </form>
+         
             <ul class="navbar-nav">
               <!--<li class="nav-item">
                 <a class="nav-link" href="#pablo">
@@ -174,8 +166,11 @@ function pageLoad() {
                   </p>
                 </a>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Log Out</a>
+                  <!--<a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Log Out</a>-->
+                      <asp:Button ID="profile_btn" CssClass="dropdown-item" runat="server" Text="Profile" />
+                  
+                      <asp:Button ID="logout_btn" OnClick="logout_btn_Click" CssClass="dropdown-item" runat="server" Text="Log Out" />
                 </div>
               </li>
             </ul>
@@ -195,7 +190,7 @@ function pageLoad() {
                   <p class="card-category">Complete the below details</p>
                 </div>
                 <div class="card-body">
-                  <form runat="server">
+                  
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
@@ -203,43 +198,19 @@ function pageLoad() {
                           <asp:Textbox ID="purpose_txt" runat="server" class="form-control"></asp:Textbox>
                         </div>
                        
-
+                        </div>
                       </div>
+                      <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Select Venue</label>
-               <!--<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <input type="text" class="form-control nav-item dropdown">
-                  </a>--><asp:DropDownList ID="venue_txt" runat="server" class="form-control dropdown-menu dropdown-menu-right">
-                              <asp:ListItem Value="" class="dropdown-item">1</asp:ListItem>
+                            <asp:DropDownList ID="venue_ddl" runat="server" CssClass="form-control">
+                             
                           </asp:DropDownList>
-                          <!--<li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">notifications</i>
-                  <span class="notification"></span>
-                  <p class="d-lg-none d-md-block">
-                    Notifications
-                  </p>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                  <a class="dropdown-item" href="#">Another Notification</a>
-                  <a class="dropdown-item" href="#">Another One</a>
-                </div>-->
-              <!--</li>-->  
                         </div>
                       </div>
-                      <!--<div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">From</label>
-                          <select class="form-control">
-                              <option>1</option><option>1</option><option>1</option><option>1</option><option>1</option>
-                          </select>
-                        </div>
-                      </div>-->
-                    </div>
+                      </div>
+                   
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
@@ -308,7 +279,7 @@ function pageLoad() {
                      
                     <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" OnClick="generate_btn_Click" />
                         <asp:Panel ID="ModalPanel" style="display:none;height:80%;" runat="server" CssClass="card col-md-8">
-                         <iframe id="pdfRendered" src="Aishwarya_Resume.pdf" style="height:100%;width:100%;"></iframe><br />
+                        <!-- <iframe id="pdfRendered" src="Aishwarya_Resume.pdf" style="height:100%;width:100%;"></iframe><br />-->
                          <div class="row">
                          <asp:Button ID="edit_btn" runat="server" Text="Edit" class="btn btn-primary pull-right"/>
                          <asp:Button ID="submit_btn" runat="server" Text="Submit" class="btn btn-primary pull-right"/>
@@ -331,7 +302,7 @@ function pageLoad() {
                       </script>-->
                       <div class="clearfix"></div>
                       
-                  </form>
+                  
                 </div>
               </div>
             </div>
@@ -375,6 +346,7 @@ function pageLoad() {
       </footer>
     </div>
 </div>
+</form>
 <div id="modalbackground" style=" position: absolute; height:100%; widh:100%; display:none; z-index:10000; background-color: #7F7F7F; opacity: 0.5;"></div>
   <!--   Core JS Files   
   <script src="../User/assets/js/core/jquery.min.js" type="text/javascript"></script>-->

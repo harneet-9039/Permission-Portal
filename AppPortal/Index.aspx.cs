@@ -11,6 +11,8 @@ namespace AppPortal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserLogin"] != null)
+                Response.Redirect("~/User/userDashboard.aspx");
             if (Page.IsPostBack) return;
 
             
