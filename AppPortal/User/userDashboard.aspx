@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userDashboard.aspx.cs" EnableEventValidation="false" Inherits="AppPortal.User.userDashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userDashboard.aspx.cs" EnableEventValidation="false" ValidateRequest="false" Inherits="AppPortal.User.userDashboard" %>
 
 <!DOCTYPE html>
 
@@ -299,20 +299,8 @@ function pageLoad() {
                          </div> 
                         </asp:Panel>
                        
-                        <ajaxToolkit:ModalPopupExtender ID="mpe" runat="server" TargetControlId="generate_btn" 
-                         PopupControlID="ModalPanel" OkControlID="edit_btn" CancelControlID="submit_btn"  BackgroundCssClass="modalBackground" BehaviorID="MPE"/>
-                        <asp:scriptmanager id="asm" runat="server"></asp:scriptmanager>
-                      <!--<script type="text/javascript">
-                          function pdf() {
-                              var pdf = new PDFObject({
-                                  url: "https://something.com/HTC_One_XL_User_Guide.pdf",
-                                  id: "pdfRendered",
-                                  pdfOpenParams: {
-                                    view: "FitH"
-                                  }
-                                }).embed("pdfRenderer");
-                          }
-                      </script>-->
+                      
+                    
                       <div class="clearfix"></div>
                       
                   
@@ -411,7 +399,7 @@ function pageLoad() {
                          </div>
                           <div class="row" style="justify-content:flex-end">
                          <asp:Button ID="editapp_btn" runat="server" Text="Edit" class="btn btn-primary "/>&nbsp;&nbsp;&nbsp;
-                         <asp:Button ID="submitapp_btn" runat="server" Text="Submit" class="btn btn-primary "/>
+                         <asp:Button ID="submitapp_btn" runat="server" OnClick="submitapp_btn_Click" Text="Submit" class="btn btn-primary "/>
                          </div> 
                     </div>
                 </div>
@@ -454,7 +442,9 @@ function pageLoad() {
       </footer>
     </div>
 </div>
+  <asp:HiddenField ID="app_hfd" runat="server" />
 </form>
+  
 <div id="modalbackground" style=" position: absolute; height:100%; width:100%; display:none; z-index:10000; background-color: #7F7F7F; opacity: 0.5;"></div>
   <!--   Core JS Files   
   <script src="../User/assets/js/core/jquery.min.js" type="text/javascript"></script>-->
@@ -477,6 +467,11 @@ function pageLoad() {
       md.initDashboardPageCharts();
 
     });
+  </script>
+  <script type="text/javascript">
+      var hdfield = document.getElementById('app_hfd');
+      hdfield.value = document.getElementById('App_pnl').innerHTML;
+      console.log(document.getElementById('App_pnl').innerHTML);
   </script>  
   <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>

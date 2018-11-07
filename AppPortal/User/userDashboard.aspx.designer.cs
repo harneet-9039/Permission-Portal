@@ -184,24 +184,6 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.Button submit_btn;
         
         /// <summary>
-        /// mpe control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.ModalPopupExtender mpe;
-        
-        /// <summary>
-        /// asm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager asm;
-        
-        /// <summary>
         /// error_lbl control.
         /// </summary>
         /// <remarks>
@@ -371,5 +353,14 @@ namespace AppPortal.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submitapp_btn;
+        
+        /// <summary>
+        /// app_hfd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField app_hfd;
     }
 }

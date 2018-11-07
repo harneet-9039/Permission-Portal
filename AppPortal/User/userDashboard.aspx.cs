@@ -6,7 +6,9 @@ using System.Web.UI;
 using System.Data;
 using System.Web.UI.WebControls;
 using AppPortal.PortalTableAdapters;
-
+using System.Windows.Forms;
+using System.IO;
+using AppPortal.Common;
 
 namespace AppPortal.User
 {
@@ -143,6 +145,51 @@ namespace AppPortal.User
             }
             else
                 args.IsValid = true;
+        }
+
+        protected void submitapp_btn_Click(object sender, EventArgs e)
+        {
+
+            string temp = app_hfd.Value;
+            Random r = new Random();
+            int randNum = r.Next(1000000);
+            string sixDigitNumber = randNum.ToString("D6");
+            string NamePath = "~/Applications/" + Session["UserLogin"].ToString() + sixDigitNumber+".pdf";
+            int Res = PDFConverter.DoConvert(Session["UserLogin"].ToString() + sixDigitNumber, temp);
+            if(Res==0)
+            {
+                error_lbl.Text = "Failed to generate PDF, Try again!!";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+            }
+            else {
+                Boolean Result = InsertApplication(NamePath);
+                if (Result == true)
+                {
+                    error_lbl.Text = "Application forwarded successfully, Refer Application list!!";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                }
+                else
+                {
+                    error_lbl.Text = "DB Error, Try again!!";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                }
+            }
+
+           
+        }
+
+
+        private Boolean InsertApplication(string path)
+        {
+            InsertApplicationTableAdapter IA = new InsertApplicationTableAdapter();
+            object Result = IA.InsertApplication(Session["UserLogin"].ToString(), venue_ddl.SelectedValue, path, Convert.ToDateTime(date2.Text), Convert.ToDateTime(date1.Text), TimeSpan.Parse(timepicker_to_txt.Text), TimeSpan.Parse(timepicker_txt.Text), purpose_txt.Text);
+            Boolean chk = Convert.ToBoolean(Result);
+            if (chk == true)
+            {
+                return true;
+            }
+            else
+                return false;
         }
     }
 }

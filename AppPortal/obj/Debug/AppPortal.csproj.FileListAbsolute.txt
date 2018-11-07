@@ -167,3 +167,4 @@ D:\Git_Projects\Permission-Portal\AppPortal\bin\roslyn\System.Reflection.Metadat
 D:\Git_Projects\Permission-Portal\AppPortal\bin\roslyn\vbc.exe
 D:\Git_Projects\Permission-Portal\AppPortal\bin\roslyn\VBCSCompiler.exe
 D:\Git_Projects\Permission-Portal\AppPortal\bin\roslyn\VBCSCompiler.exe.config
+D:\Permission-Portal\AppPortal\bin\pdfcrowd.dll
