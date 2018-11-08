@@ -181,7 +181,6 @@
     <None Include="Portal.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Portal.Designer.cs</LastGenOutput>
     </None>
     <Content Include="Portal.xss">
       <DependentUpon>Portal.xsd</DependentUpon>

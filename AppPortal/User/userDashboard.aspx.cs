@@ -88,8 +88,22 @@ namespace AppPortal.User
                     {
                         //urIframe.Attributes.Add("src", "~/Content/AbstractTemplate.pdf#toolbar=0&navpanes=0&scrollbar=0");
                         //error_lbl.Visible = false;
-                        FillApplicationData();
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModalApp();", true);
+                        CheckAvailablityTableAdapter ca = new CheckAvailablityTableAdapter();
+                        object Result = ca.CheckAvailablity(Convert.ToDateTime(date2.Text), 
+                        Convert.ToDateTime(date1.Text), TimeSpan.Parse(timepicker_to_txt.Text), 
+                        TimeSpan.Parse(timepicker_txt.Text), venue_ddl.SelectedValue);
+
+                        string Res = Convert.ToString(Result);
+                        if (Res == null)
+                        {
+                            FillApplicationData();
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModalApp();", true);
+                        }
+                        else {
+                            error_lbl.Text = "Venue " +"<b>" +  venue_ddl.SelectedItem.ToString() + "</b>" + " is already booked<br />"
+                            + "<b>Information of booking:</b> " + Res;
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                        }
                     }
                 }
                
