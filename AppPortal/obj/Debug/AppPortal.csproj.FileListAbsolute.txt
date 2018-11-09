@@ -129,7 +129,6 @@ D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.csproj.CoreCompi
 D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.csproj.CopyComplete
 D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.dll
 D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.pdb
-D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.csprojAssemblyReference.cache
 C:\Users\Hp\Desktop\Permission-Portal\AppPortal\obj\Debug\AppPortal.csproj.CoreCompileInputs.cache
 C:\Users\Hp\Desktop\Permission-Portal\AppPortal\obj\Debug\AppPortal.csprojAssemblyReference.cache
 C:\Users\Hp\Desktop\Permission-Portal\AppPortal\bin\roslyn\csc.exe
@@ -192,3 +191,4 @@ F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.dll
 F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.pdb
 D:\Permission-Portal\AppPortal\bin\pdfcrowd.dll
 F:\Project\Permission-Portal\AppPortal\bin\pdfcrowd.dll
+D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.csprojAssemblyReference.cache

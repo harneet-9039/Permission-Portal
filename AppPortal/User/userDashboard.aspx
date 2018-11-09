@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userDashboard.aspx.cs" EnableEventValidation="false" ValidateRequest="false" Inherits="AppPortal.User.userDashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="userDashboard.aspx.cs" EnableEventValidation="false" ValidateRequest="false" Inherits="AppPortal.User.userDashboard" %>
 
 <!DOCTYPE html>
 

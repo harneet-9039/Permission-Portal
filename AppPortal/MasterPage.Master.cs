@@ -62,9 +62,9 @@ namespace AppPortal
                 
             }
             else if (chk == "dtrue")
-            {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Department Login successfully.');window.location='Index.aspx';", true);
+            { 
                 Session["DeptLogin"] = regno_txt.Text;
+                Response.Redirect("~/Department/deptDashboard.aspx");
             }
             else
             {
