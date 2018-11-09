@@ -153,7 +153,7 @@ function pageLoad() {
                     Stats
                   </p>
                 </a>
-              </li>-->
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">notifications</i>
@@ -170,7 +170,7 @@ function pageLoad() {
                   <a class="dropdown-item" href="#">Another Notification</a>
                   <a class="dropdown-item" href="#">Another One</a>
                 </div>
-              </li>
+              </li>-->
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="navbarDropdownMenuLink_sec" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons" style="float:right;">person</i>
@@ -181,7 +181,7 @@ function pageLoad() {
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <!--<a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Log Out</a>-->
-                      <asp:Button ID="profile_btn" CssClass="dropdown-item" runat="server" Text="Profile" />
+                      <asp:Button ID="profile_btn" CssClass="dropdown-item" runat="server" Text="Profile" OnClick="open_profile" />
                   
                       <asp:Button ID="logout_btn" OnClick="logout_btn_Click" CssClass="dropdown-item" runat="server" Text="Log Out" />
                 </div>
@@ -405,9 +405,9 @@ function pageLoad() {
                             *Please go through the application carefully. If wrong information found, application will be rejected straightforward.
                         </div>
                           <div class="row" id="btn" style="justify-content:flex-end">
-                         <button ID="save_btn" class="btn btn-primary" style="visibility:hidden;" onclick="save()">Save</button>
-                         <button ID="editapp_btn" class="btn btn-primary" OnClick="gen()">Edit</button> &nbsp;&nbsp;&nbsp;
-                         <asp:Button ID="submitapp_btn" runat="server" Text="Submit" class="btn btn-primary "/>
+                         <button id="save_btn" class="btn btn-primary" style="visibility:hidden;" onclick="save()">Save</button>
+                         <button id="editapp_btn" class="btn btn-primary"  onclick="gen()">Edit</button> &nbsp;&nbsp;&nbsp;
+                         <asp:Button ID="submitapp_btn" OnClick="submitapp_btn_Click" runat="server" Text="Submit" class="btn btn-primary "/>
                          </div> 
                     </div>
                 </div>
@@ -483,6 +483,7 @@ function pageLoad() {
     });
   </script>
   <script type="text/javascript">
+        
       var hdfield = document.getElementById('app_hfd');
       hdfield.value = document.getElementById('App_pnl').innerHTML;
       console.log(document.getElementById('App_pnl').innerHTML);
@@ -631,6 +632,8 @@ $(function () {
         document.getElementById('editapp_btn').style.visibility = 'visible';
         document.getElementById('submitapp_btn').style.visibility = 'visible';
         document.getElementById('save_btn').style.visibility='hidden';
+        var hdfield = document.getElementById('app_hfd');
+      hdfield.value = document.getElementById('App_pnl').innerHTML;
     }
 </script>
 </body>

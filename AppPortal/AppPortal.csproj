@@ -52,7 +52,7 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="pdfcrowd">
-      <HintPath>C:\Users\HP\Downloads\PFs\pdfcrowd-4.3.5-dotnet\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
+      <HintPath>C:\Users\acer\Downloads\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -224,6 +224,7 @@
     <Content Include="User\assets\js\plugins\chartist.min.js" />
     <Content Include="User\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="User\userDashboard.aspx" />
+    <Content Include="User\UserProfile.aspx" />
     <Content Include="User\viewApplications.aspx" />
     <Content Include="webfonts\fa-brands-400.eot" />
     <Content Include="webfonts\fa-brands-400.ttf" />
@@ -535,6 +536,13 @@
     </Compile>
     <Compile Include="User\userDashboard.aspx.designer.cs">
       <DependentUpon>userDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\viewApplications.aspx.cs">
       <DependentUpon>viewApplications.aspx</DependentUpon>

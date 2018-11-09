@@ -94,7 +94,7 @@ namespace AppPortal.User
                         TimeSpan.Parse(timepicker_txt.Text), venue_ddl.SelectedValue);
 
                         string Res = Convert.ToString(Result);
-                        if (Res == null)
+                        if (Res == "")
                         {
                             FillApplicationData();
                             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModalApp();", true);
@@ -204,6 +204,11 @@ namespace AppPortal.User
             }
             else
                 return false;
+        }
+
+        protected void open_profile(object sender, EventArgs e)
+        {
+            Response.Redirect("UserProfile.aspx");
         }
     }
 }
