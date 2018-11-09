@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
+
   <link rel="apple-touch-icon" sizes="76x76" href="../User/assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../images/logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -291,17 +292,7 @@ function pageLoad() {
                     </div>-->
                      
                     <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" ValidationGroup="Error" CausesValidation="true" OnClick="generate_btn_Click" />
-                        <asp:Panel ID="ModalPanel" style="display:none;height:80%;" runat="server" CssClass="card col-md-8">
-                        <!-- <iframe id="pdfRendered" src="Aishwarya_Resume.pdf" style="height:100%;width:100%;"></iframe><br />-->
-                         <div class="row">
-                         <asp:Button ID="edit_btn" runat="server" Text="Edit" class="btn btn-primary pull-right"/>
-                         <asp:Button ID="submit_btn" runat="server" Text="Submit" class="btn btn-primary pull-right"/>
-                         </div> 
-                        </asp:Panel>
-                       
-                        <ajaxToolkit:ModalPopupExtender ID="mpe" runat="server" TargetControlId="generate_btn" 
-                         PopupControlID="ModalPanel" OkControlID="edit_btn" CancelControlID="submit_btn"  BackgroundCssClass="modalBackground" BehaviorID="MPE"/>
-                        <asp:scriptmanager id="asm" runat="server"></asp:scriptmanager>
+                        
                       <!--<script type="text/javascript">
                           function pdf() {
                               var pdf = new PDFObject({
@@ -388,13 +379,14 @@ function pageLoad() {
                         <br />
                         <div class="row">
                           
-                            <asp:Label ID="container_lbl" runat="server" Text="">
-                        My name is&nbsp;<asp:Label ID="appname_lbl" runat="server" Text=""></asp:Label>,&nbsp;
+                         <asp:Label ID="container_lbl" runat="server" Text="">
+                        <asp:label ID="body_lbl" runat="server">My name is&nbsp;<asp:Label ID="appname_lbl" runat="server" Text=""></asp:Label>,&nbsp;
                         Registration Number:&nbsp;<b><asp:Label ID="reg_lbl" runat="server" Text=""></asp:Label></b> 
                         of <asp:Label ID="course_yr_lbl" runat="server" Text=""></asp:Label>. I request you to provide me with 
                         permission for the venue, i.e&nbsp;<b><asp:Label ID="venue_lbl" runat="server" Text=""></asp:Label></b>&nbsp;from 
                         <asp:Label ID="dateapp_lbl" runat="server" Text=""></asp:Label>,&nbsp;<asp:Label ID="time_lbl" runat="server" Text=""></asp:Label>
-                        for&nbsp;<b><asp:Label ID="reason_lbl" runat="server" Text=""></asp:Label>.</b>
+                        for&nbsp;<b><asp:Label ID="reason_lbl" runat="server" Text=""></asp:Label>.</b></asp:Label>
+                        
                         <br />
                         Kindly grant the permission for the same. I would be grateful to you.
                         <br /><br />
@@ -409,14 +401,24 @@ function pageLoad() {
                         </asp:Panel>
                         
                          </div>
-                          <div class="row" style="justify-content:flex-end">
-                         <asp:Button ID="editapp_btn" runat="server" Text="Edit" class="btn btn-primary "/>&nbsp;&nbsp;&nbsp;
+                        <div class="row" style="color:red;font-size:small;margin-left:10px;margin-right:10px;">
+                            *Please go through the application carefully. If wrong information found, application will be rejected straightforward.
+                        </div>
+                          <div class="row" id="btn" style="justify-content:flex-end">
+                         <button ID="save_btn" class="btn btn-primary" style="visibility:hidden;" onclick="save()">Save</button>
+                         <button ID="editapp_btn" class="btn btn-primary" OnClick="gen()">Edit</button> &nbsp;&nbsp;&nbsp;
                          <asp:Button ID="submitapp_btn" runat="server" Text="Submit" class="btn btn-primary "/>
                          </div> 
                     </div>
                 </div>
          </div>
     </div>
+   <!-- <script type="text/javascript">
+        function gen() {
+            var txt = document.getElementById('<%=container_lbl.ClientID%>').innerText;
+            alert(txt);
+        }
+    </script>-->
     <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
@@ -519,7 +521,110 @@ function pageLoad() {
    
     $('#timepicker_txt').timepicker();
     $('#timepicker_to_txt').timepicker();
-    </script>
+</script>
+    <!--
+<script type="text/javascript">
+$(function () {
+    //Loop through all Labels with class 'editable'.
+    $(".editable").each(function () {
+        //Reference the Label.
+        var label = $(this);
+ 
+        //Add a TextBox next to the Label.
+        label.after("<textarea style = 'display:none;width:100%;' columns='150' rows='8' />");
+ 
+        //Reference the TextBox.
+        var textarea = $(this).next();
+ 
+        //Set the name attribute of the TextBox.
+        var id = this.id.split('_')[this.id.split('_').length - 1];
+        textarea[0].name = id.replace("lbl", "txt");
+ 
+        //Assign the value of Label to TextBox.
+      
+        textarea.val(document.getElementById('<%=body_lbl.ClientID%>').innerText);
+ 
+        //When Label is clicked, hide Label and show TextBox.
+        label.click(function () {
+            $(this).hide();
+            $(this).next().show();
+        });
+ 
+        //When focus is lost from TextBox, hide TextBox and show Label.
+        textarea.focusout(function () {
+             var reg =/<(script)*?>/g; 
+            if (reg.test($(this).val()) == true) {
+                alert('Script Tag is not allowed !');
+                preventDefault();
+            }
+            
+            $(this).hide();
+            $(this).prev().html($(this).val());
+            $(this).prev().show();
+        });
+    });
+});
+</script>-->
+<script type="text/javascript">
+    function gen() {
+        save_btn.disabled = false;
+        editapp_btn.disabled = true;
+        document.getElementById('editapp_btn').style.visibility = 'hidden';
+        document.getElementById('submitapp_btn').style.visibility = 'hidden';
+        document.getElementById('save_btn').style.visibility='visible';
+        //Reference the Label.
+        var label = $(body_lbl);
+ 
+        //Add a TextBox next to the Label.
+        label.after("<textarea  id='t' style = 'display:none;width:100%;' columns='150' rows='8' />");
+ 
+        //Reference the TextBox.
+        var textarea = $(body_lbl).next();
+ 
+        //Set the name attribute of the TextBox.
+        var id = body_lbl.id.split('_')[body_lbl.id.split('_').length - 1];
+        textarea[0].name = id.replace("lbl", "txt");
+ 
+        //Assign the value of Label to TextBox.
+      
+        textarea.val(document.getElementById('<%=body_lbl.ClientID%>').innerText);
 
+        $(body_lbl).hide();
+        $(body_lbl).next().show();
+
+        //When focus is lost from TextBox, hide TextBox and show Label.
+       /* textarea.focusout(function () {
+             var reg =/<(script)*?>/g; 
+            if (reg.test($(this).val()) == true) {
+                alert('Script Tag is not allowed !');
+                preventDefault();
+            }
+            
+            $(this).hide();
+            $(this).prev().html($(this).val());
+            $(this).prev().show();
+            editapp_btn.disabled = false;
+        });*/
+       
+        
+       
+    }
+    function save() {
+         var reg =/<(script)*?>/g; 
+            if (reg.test($(t).val()) == true) {
+                alert('Script Tag is not allowed !');
+                preventDefault();
+            }
+            
+        $(t).hide();
+        $(body_lbl).html($(t).val());
+        $(body_lbl).show();
+        editapp_btn.disabled = false;
+        save_btn.disabled = true;
+        document.getElementById('editapp_btn').style.visibility = 'visible';
+        document.getElementById('submitapp_btn').style.visibility = 'visible';
+        document.getElementById('save_btn').style.visibility='hidden';
+    }
+</script>
 </body>
 </html>

@@ -157,51 +157,6 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.Button generate_btn;
         
         /// <summary>
-        /// ModalPanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel ModalPanel;
-        
-        /// <summary>
-        /// edit_btn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button edit_btn;
-        
-        /// <summary>
-        /// submit_btn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit_btn;
-        
-        /// <summary>
-        /// mpe control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.ModalPopupExtender mpe;
-        
-        /// <summary>
-        /// asm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager asm;
-        
-        /// <summary>
         /// error_lbl control.
         /// </summary>
         /// <remarks>
@@ -263,6 +218,15 @@ namespace AppPortal.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label container_lbl;
+        
+        /// <summary>
+        /// body_lbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label body_lbl;
         
         /// <summary>
         /// appname_lbl control.
@@ -353,15 +317,6 @@ namespace AppPortal.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Sign_lbl;
-        
-        /// <summary>
-        /// editapp_btn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editapp_btn;
         
         /// <summary>
         /// submitapp_btn control.
