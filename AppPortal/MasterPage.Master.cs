@@ -37,8 +37,8 @@ namespace AppPortal
             RegisterUserTableAdapter RU = new RegisterUserTableAdapter();
             
             string fileName = Path.GetFileName(sign_fld.PostedFile.FileName);
-            sign_fld.PostedFile.SaveAs(Server.MapPath("~/Content/") + fileName);
-            object Result = RU.RegisterUser(reg_txt.Text, name_txt.Text, course_txt.Text, dep_txt.Text, stud_txt.Text, "~/Signature/User/" + fileName, email_txt.Text, pwdr_txt.Text);
+            sign_fld.PostedFile.SaveAs(Server.MapPath("http://Permission-Portal.somee.com/Signature/User/") + fileName);
+            object Result = RU.RegisterUser(reg_txt.Text, name_txt.Text, course_txt.Text, dep_txt.Text, stud_txt.Text, "http://Permission-Portal.somee.com/Signature/User/" + fileName, email_txt.Text, pwdr_txt.Text);
 
             Boolean chk = Convert.ToBoolean(Result);
             if(chk==true) {

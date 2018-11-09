@@ -85,13 +85,13 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox YearOfStudy;
         
         /// <summary>
-        /// UpdateYear control.
+        /// Year_vld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UpdateYear;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Year_vld;
         
         /// <summary>
         /// UserEmail control.
@@ -103,21 +103,39 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox UserEmail;
         
         /// <summary>
-        /// UpdateEmail control.
+        /// Email_vld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UpdateEmail;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Email_vld;
         
         /// <summary>
-        /// UpdateSign control.
+        /// EmailPatternValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UpdateSign;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EmailPatternValidator;
+        
+        /// <summary>
+        /// UserSign control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage UserSign;
+        
+        /// <summary>
+        /// Update_btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Update_btn;
     }
 }

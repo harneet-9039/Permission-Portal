@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userDashboard.aspx.cs" Inherits="AppPortal.User.userDashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="acceptedApplications.aspx.cs" Inherits="AppPortal.User.acceptedApplications" %>
 
 <!DOCTYPE html>
 
@@ -176,6 +176,21 @@
                       </thead>
                       <tbody>
                         <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                            Dakota Rice
+                          </td>
+                          <td>
+                            Niger
+                          </td>
+                          <td>
+                            <button type="submit" class="btn btn-primary" style="height:30px;padding-top:8px;">Download</button>
+                          </td>
+                          
+                        </tr>
+                          <tr>
                           <td>
                             1
                           </td>
