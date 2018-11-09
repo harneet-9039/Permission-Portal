@@ -51,16 +51,7 @@
 
 
  </style> 
-<script type="text/javascript">
-function pageLoad() {
-            var mpe = $find("MPE");
-            mpe.add_shown(onShown);
-        }
-        function onShown() {
-            var background = $find("MPE")._backgroundElement;
-            background.onclick = function () { $find("MPE").hide(); }
-        }
-</script>
+
 </head>
 
 <body class="">
@@ -97,36 +88,7 @@ function pageLoad() {
               <p>Accepted Applications</p>
             </a>
           </li>
-          <!--<li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
-              <i class="material-icons">library_books</i>
-              <p>Typography</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
-              <i class="material-icons">bubble_chart</i>
-              <p>Icons</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./map.html">
-              <i class="material-icons">location_ons</i>
-              <p>Maps</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./notifications.html">
-              <i class="material-icons">notifications</i>
-              <p>Notifications</p>
-            </a>
-          </li>
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.html">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
+        
         </ul>
       </div>
     </div>
@@ -146,31 +108,7 @@ function pageLoad() {
          <div class="collapse navbar-collapse justify-content-end">
          
             <ul class="navbar-nav">
-              <!--<li class="nav-item">
-                <a class="nav-link" href="#pablo">
-                  <i class="material-icons">dashboard</i>
-                  <p class="d-lg-none d-md-block">
-                    Stats
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">notifications</i>
-                  <span class="notification"></span>
-                  <p class="d-lg-none d-md-block">
-                    Notifications
-                  </p>
-                </a>
-              
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                  <a class="dropdown-item" href="#">Another Notification</a>
-                  <a class="dropdown-item" href="#">Another One</a>
-                </div>
-              </li>-->
+             
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="navbarDropdownMenuLink_sec" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons" style="float:right;">person</i>
@@ -530,49 +468,7 @@ function pageLoad() {
     $('#timepicker_txt').timepicker();
     $('#timepicker_to_txt').timepicker();
 </script>
-    <!--
-<script type="text/javascript">
-$(function () {
-    //Loop through all Labels with class 'editable'.
-    $(".editable").each(function () {
-        //Reference the Label.
-        var label = $(this);
- 
-        //Add a TextBox next to the Label.
-        label.after("<textarea style = 'display:none;width:100%;' columns='150' rows='8' />");
- 
-        //Reference the TextBox.
-        var textarea = $(this).next();
- 
-        //Set the name attribute of the TextBox.
-        var id = this.id.split('_')[this.id.split('_').length - 1];
-        textarea[0].name = id.replace("lbl", "txt");
- 
-        //Assign the value of Label to TextBox.
-      
-        textarea.val(document.getElementById('<%=body_lbl.ClientID%>').innerText);
- 
-        //When Label is clicked, hide Label and show TextBox.
-        label.click(function () {
-            $(this).hide();
-            $(this).next().show();
-        });
- 
-        //When focus is lost from TextBox, hide TextBox and show Label.
-        textarea.focusout(function () {
-             var reg =/<(script)*?>/g; 
-            if (reg.test($(this).val()) == true) {
-                alert('Script Tag is not allowed !');
-                preventDefault();
-            }
-            
-            $(this).hide();
-            $(this).prev().html($(this).val());
-            $(this).prev().show();
-        });
-    });
-});
-</script>-->
+   
 <script type="text/javascript">
     function gen() {
         save_btn.disabled = false;
@@ -600,19 +496,7 @@ $(function () {
         $(body_lbl).hide();
         $(body_lbl).next().show();
 
-        //When focus is lost from TextBox, hide TextBox and show Label.
-       /* textarea.focusout(function () {
-             var reg =/<(script)*?>/g; 
-            if (reg.test($(this).val()) == true) {
-                alert('Script Tag is not allowed !');
-                preventDefault();
-            }
-            
-            $(this).hide();
-            $(this).prev().html($(this).val());
-            $(this).prev().show();
-            editapp_btn.disabled = false;
-        });*/
+      
        
         
        

@@ -18,6 +18,7 @@ namespace AppPortal.User
         int count = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             if (Session["UserLogin"]==null)
             {
@@ -31,11 +32,12 @@ namespace AppPortal.User
 
                 string res = Convert.ToString(Result);
                 username_txt.Text = res;
+                Session["UserName"] = res;
             }
 
             FillVenue();
-           
-                
+
+            
            
             
         }
@@ -88,10 +90,10 @@ namespace AppPortal.User
                     {
                         //urIframe.Attributes.Add("src", "~/Content/AbstractTemplate.pdf#toolbar=0&navpanes=0&scrollbar=0");
                         //error_lbl.Visible = false;
-                        CheckAvailablityTableAdapter ca = new CheckAvailablityTableAdapter();
-                        object Result = ca.CheckAvailablity(Convert.ToDateTime(date2.Text), 
-                        Convert.ToDateTime(date1.Text), TimeSpan.Parse(timepicker_to_txt.Text), 
-                        TimeSpan.Parse(timepicker_txt.Text), venue_ddl.SelectedValue);
+                        CheckAvailabilityVenueTableAdapter ca = new CheckAvailabilityVenueTableAdapter();
+                        object Result = ca.CheckAvailabilityVenue(date2.Text, 
+                        date1.Text, timepicker_to_txt.Text, 
+                       timepicker_txt.Text, venue_ddl.SelectedValue);
 
                         string Res = Convert.ToString(Result);
                         if (Res == "")
@@ -168,7 +170,7 @@ namespace AppPortal.User
             Random r = new Random();
             int randNum = r.Next(1000000);
             string sixDigitNumber = randNum.ToString("D6");
-            string NamePath = "~/Applications/" + Session["UserLogin"].ToString() + sixDigitNumber+".pdf";
+            string NamePath = "http://Permission-Portal.somee.com/Applications/" + Session["UserLogin"].ToString() + sixDigitNumber+".pdf";
             int Res = PDFConverter.DoConvert(Session["UserLogin"].ToString() + sixDigitNumber, temp);
             if(Res==0)
             {

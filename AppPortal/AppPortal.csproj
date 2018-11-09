@@ -177,10 +177,12 @@
       <DependentUpon>Portal.xsd</DependentUpon>
     </Content>
     <Content Include="Content\AbstractTemplate.pdf" />
-    <Content Include="Applications\2017CA48010788.pdf" />
+    <Content Include="Applications\2017CA48731229.pdf" />
+    <Content Include="Applications\2017CA48763551.pdf" />
     <None Include="Portal.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Portal1.Designer.cs</LastGenOutput>
     </None>
     <Content Include="Portal.xss">
       <DependentUpon>Portal.xsd</DependentUpon>
@@ -202,6 +204,8 @@
     <Content Include="User\acceptedApplications.aspx" />
     <Content Include="User\assets\css\material-dashboard.css" />
     <Content Include="User\assets\css\material-dashboard.min.css" />
+    <Content Include="User\assets\dist\material-datetime-picker.css" />
+    <Content Include="User\assets\dist\material-datetime-picker.js" />
     <Content Include="User\assets\img\apple-icon.png" />
     <Content Include="User\assets\img\cover.jpg" />
     <Content Include="User\assets\img\faces\avatar.jpg" />
@@ -475,7 +479,9 @@
     <Content Include="js\move-top.js" />
     <Content Include="js\owl.carousel.js" />
     <Content Include="StyleSheet1.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\PDFConverter.cs" />
@@ -510,7 +516,7 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Portal.Designer.cs">
+    <Compile Include="Portal1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Portal.xsd</DependentUpon>
@@ -555,8 +561,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Signature\User\" />
-    <Folder Include="User\assets\dist\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
