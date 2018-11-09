@@ -51,6 +51,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="pdfcrowd">
+      <HintPath>C:\Users\HP\Downloads\PFs\pdfcrowd-4.3.5-dotnet\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,6 +63,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -70,6 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\pp.png" />
+    <Content Include="Content\signature.jpg" />
+    <Content Include="Content\signature.png" />
     <Content Include="images\CricketGround2.jpg" />
     <Content Include="images\gl.jpg" />
     <Content Include="images\gl1.jpg" />
@@ -170,10 +177,10 @@
       <DependentUpon>Portal.xsd</DependentUpon>
     </Content>
     <Content Include="Content\AbstractTemplate.pdf" />
+    <Content Include="Applications\2017CA48010788.pdf" />
     <None Include="Portal.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Portal.Designer.cs</LastGenOutput>
     </None>
     <Content Include="Portal.xss">
       <DependentUpon>Portal.xsd</DependentUpon>
@@ -470,6 +477,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\PDFConverter.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
