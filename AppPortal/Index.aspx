@@ -35,7 +35,7 @@
     </section>
 
 
-    <section class="course-selection py-lg-5 py-md-4 py-4">
+    <section class="course-selection py-lg-5 py-md-4 py-4" style="background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../images/banner1.jpg) no-repeat center;">
         <div class="layer-transporant py-md-5 py-4">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
