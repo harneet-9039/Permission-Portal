@@ -196,52 +196,10 @@
                         </div>
                       </div>
                     </div>
-                <!--<div class="row">
-                        <div class="form-group">
-                <label for="dtp_input2" class="col-md-2 control-label">Date Picking</label>
-                <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                    <asp:TextBox ID="start_date" CssClass="form-control" size="16" value="" runat="server" readonly></asp:TextBox>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                </div>
-				 <asp:HiddenField ID="dtp_input2" runat="server" />
-            </div>
-			<div class="form-group">
-                <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
-                <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
-                    <asp:TextBox ID="end_date" CssClass="form-control" size="16" value="" runat="server" readonly></asp:TextBox>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-					<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                </div>
-				 <asp:HiddenField ID="dtp_input3" runat="server" />
-            </div>
-                      
-                    </div>
-                    <!--<div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>About Me</label>
-                          <div class="form-group">
-                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                            <textarea class="form-control" rows="5"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </div>-->
+               
                      
                     <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" ValidationGroup="Error" CausesValidation="true" OnClick="generate_btn_Click" />
-                        
-                      <!--<script type="text/javascript">
-                          function pdf() {
-                              var pdf = new PDFObject({
-                                  url: "https://something.com/HTC_One_XL_User_Guide.pdf",
-                                  id: "pdfRendered",
-                                  pdfOpenParams: {
-                                    view: "FitH"
-                                  }
-                                }).embed("pdfRenderer");
-                          }
-                      </script>-->
+                    
                       <div class="clearfix"></div>
                       
                   
@@ -351,12 +309,7 @@
                 </div>
          </div>
     </div>
-   <!-- <script type="text/javascript">
-        function gen() {
-            var txt = document.getElementById('<%=container_lbl.ClientID%>').innerText;
-            alert(txt);
-        }
-    </script>-->
+  
     <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">

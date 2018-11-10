@@ -64,7 +64,7 @@ namespace AppPortal
             else if (chk == "dtrue")
             { 
                 Session["DeptLogin"] = regno_txt.Text;
-                Response.Redirect("~/Department/deptDashboard.aspx");
+                Response.Redirect("~/Department/Applications.aspx");
             }
             else
             {

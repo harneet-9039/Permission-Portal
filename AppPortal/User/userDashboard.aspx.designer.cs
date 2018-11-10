@@ -112,42 +112,6 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox timepicker_to_txt;
         
         /// <summary>
-        /// start_date control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox start_date;
-        
-        /// <summary>
-        /// dtp_input2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField dtp_input2;
-        
-        /// <summary>
-        /// end_date control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox end_date;
-        
-        /// <summary>
-        /// dtp_input3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField dtp_input3;
-        
-        /// <summary>
         /// generate_btn control.
         /// </summary>
         /// <remarks>
