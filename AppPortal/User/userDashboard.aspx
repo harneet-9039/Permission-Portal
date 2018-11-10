@@ -79,13 +79,13 @@
           <li class="nav-item ">
             <a class="nav-link" href="viewApplications.aspx">
               <i class="material-icons">library_books</i>
-              <p>View Applications</p>
+              <p>View Current Applications</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="acceptedApplications.aspx">
               <i class="material-icons">library_books</i>
-              <p>Accepted Applications</p>
+              <p>View Rejected Applications</p>
             </a>
           </li>
         
