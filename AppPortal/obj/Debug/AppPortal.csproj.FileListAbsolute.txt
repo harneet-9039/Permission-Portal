@@ -189,6 +189,5 @@ F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.csproj.CoreCompileInp
 F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.csproj.CopyComplete
 F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.dll
 F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.pdb
-F:\Project\Permission-Portal\AppPortal\bin\pdfcrowd.dll
 D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.csprojAssemblyReference.cache
 D:\Git_Projects\Permission-Portal\AppPortal\bin\pdfcrowd.dll

@@ -205,7 +205,7 @@
                           </td>
                           
                         </tr>
-                        <!--<tr>
+                        <tr>
                           <td>
                             2
                           </td>
@@ -289,7 +289,75 @@
                           <td class="text-primary">
                             $78,615
                           </td>
-                        </tr>-->
+                        </tr>
+                            <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>
+                            Mason Porter
+                          </td>
+                          <td>
+                            Chile
+                          </td>
+                          <td>
+                            Gloucester
+                          </td>
+                          <td class="text-primary">
+                            $78,615
+                          </td>
+                        </tr>
+                            <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>
+                            Mason Porter
+                          </td>
+                          <td>
+                            Chile
+                          </td>
+                          <td>
+                            Gloucester
+                          </td>
+                          <td class="text-primary">
+                            $78,615
+                          </td>
+                        </tr>
+                            <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>
+                            Mason Porter
+                          </td>
+                          <td>
+                            Chile
+                          </td>
+                          <td>
+                            Gloucester
+                          </td>
+                          <td class="text-primary">
+                            $78,615
+                          </td>
+                        </tr>
+                            <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>
+                            Mason Porter
+                          </td>
+                          <td>
+                            Chile
+                          </td>
+                          <td>
+                            Gloucester
+                          </td>
+                          <td class="text-primary">
+                            $78,615
+                          </td>
+                        </tr>s
                       </tbody>
                     </table>
                   </div>
@@ -434,9 +502,9 @@
           </div>
         </div>
         </div>
-      <footer class="footer">
+      <footer class="footer" style="position:fixed;bottom:0px;width:80%;background-color:#f3e6ff">
         <div class="container-fluid">
-          <nav class="float-left">
+          <nav class="float-left" >
             <ul>
               <li>
                 <a href="../Index.aspx">
