@@ -26,7 +26,7 @@
 <body class="">
 <form id="form1" runat="server">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../User/assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -46,13 +46,13 @@
             </a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="./Rejected.aspx">
+            <a class="nav-link" href="./RejectedApplications.aspx">
               <i class="material-icons">content_paste</i>
               <p>Rejected</p>
             </a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="./Accepted.aspx">
+            <a class="nav-link" href="./AcceptedApplications.aspx">
               <i class="material-icons">content_paste</i>
               <p>Accepted</p>
             </a>
@@ -117,7 +117,7 @@
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                  
                   
-                      <asp:Button ID="logout_btn" CssClass="dropdown-item" runat="server" Text="Log Out" />
+                      <asp:Button ID="logout_btn" OnVlick="logout_btn_Click" CssClass="dropdown-item" runat="server" Text="Log Out" />
                 </div>
               </li>
             </ul>

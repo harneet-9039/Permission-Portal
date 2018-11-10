@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Rejected.aspx.cs" Inherits="AppPortal.Department.Rejected" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RejectedApplications.aspx.cs" Inherits="AppPortal.Department.Rejected" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="../images/logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Permission Portal
+    Rejected Applications
   </title>
      <style>
     /* Popup container - can be anything you want */
@@ -74,15 +74,15 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="../Department/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <link href="../User/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../Department/assets/demo/demo.css" rel="stylesheet" />
+  <link href="../User/assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="">
     <form runat="server">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../Department/assets/img/cover1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -114,13 +114,13 @@
             </a>
           </li>
 		  <li class="nav-item active">
-            <a class="nav-link" href="./Rejected.aspx">
+            <a class="nav-link" href="./RejectedApplications.aspx">
               <i class="material-icons">content_paste</i>
               <p>Rejected</p>
             </a>
           </li>
 		  <li class="nav-item ">
-            <a class="nav-link" href="./Accepted.aspx">
+            <a class="nav-link" href="./AcceptedApplications.aspx">
               <i class="material-icons">content_paste</i>
               <p>Accepted</p>
             </a>
@@ -225,7 +225,7 @@
       </nav>
       <!-- End Navbar -->
 	  
-      <div class="content" style="background-image: url(../Department/assets/img/cover3.jpg);">
+      <div class="content">
           <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
@@ -820,14 +820,10 @@
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
-              <li>
-               <!-- <a href="./Index.aspx">-->
-                 <b> Permission Portal</b>
-               <!-- </a>-->
-              </li>
+             
               <li>
                 <a href="../Index.aspx">
-                  About Us
+                  Permission Portal
                 </a>
               </li>
               <li>

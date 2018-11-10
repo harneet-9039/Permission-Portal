@@ -23,12 +23,56 @@ namespace AppPortal.User
             YearOfStudy.Text = dt.Rows[0][4].ToString();
             UserEmail.Text = dt.Rows[0][5].ToString();
             UserSign.Attributes.Add("src", dt.Rows[0][6].ToString());
+
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            if (Session["UserLogin"] == null)
+            {
+                Response.Redirect("~/Index.aspx");
+            }
+            if (Page.IsPostBack) return;
+            if (Session["UserLogin"] != null)
+            {
+                GetUserNameTableAdapter gu = new GetUserNameTableAdapter();
+                object Result = gu.GetUserName(Session["UserLogin"].ToString());
+
+                string res = Convert.ToString(Result);
+                username_txt.Text = res;
+                Session["UserName"] = res;
+            }
         }
 
         protected void logout_btn_Click(object sender, EventArgs e)
         {
             Session.Remove("UserLogin");
             Response.Redirect("~/Index.aspx");
+        }
+
+        private Boolean UpdateUserProfile()
+        {
+            UpdateUserProfileTableAdapter UP = new UpdateUserProfileTableAdapter();
+            object Result = UP.UpdateUserProfile(Session["UserLogin"].ToString(), Convert.ToInt32(YearOfStudy.Text), UserEmail.Text);
+            Boolean chk = Convert.ToBoolean(Result);
+            if (chk == true)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+
+        protected void update_btn_Click(object sender, EventArgs e)
+        {
+            Boolean Result = UpdateUserProfile();
+            if (Result == true)
+            {
+                error_lbl.Text = "Profile Updated successfully!!";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+            }
+            else
+            {
+                error_lbl.Text = "DB Error, Try again!!";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+            }
         }
     }
 

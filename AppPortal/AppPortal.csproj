@@ -52,7 +52,7 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="pdfcrowd">
-      <HintPath>C:\Users\Hp\Downloads\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
+      <HintPath>F:\pdf-crowd\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -77,7 +77,7 @@
     <Content Include="Content\pp.png" />
     <Content Include="Content\signature.jpg" />
     <Content Include="Content\signature.png" />
-    <Content Include="Department\Accepted.aspx" />
+    <Content Include="Department\AcceptedApplications.aspx" />
     <Content Include="Department\Applications.aspx" />
     <Content Include="Department\assets\css\material-dashboard.css" />
     <Content Include="Department\assets\css\material-dashboard.min.css" />
@@ -110,7 +110,7 @@
     <Content Include="Department\assets\js\plugins\bootstrap-notify.js" />
     <Content Include="Department\assets\js\plugins\chartist.min.js" />
     <Content Include="Department\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
-    <Content Include="Department\Rejected.aspx" />
+    <Content Include="Department\RejectedApplications.aspx" />
     <Content Include="Department\viewPage.aspx" />
     <Content Include="images\CricketGround2.jpg" />
     <Content Include="images\gl.jpg" />
@@ -699,12 +699,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Department\Accepted.aspx.cs">
-      <DependentUpon>Accepted.aspx</DependentUpon>
+    <Compile Include="Department\AcceptedApplications.aspx.cs">
+      <DependentUpon>AcceptedApplications.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Department\Accepted.aspx.designer.cs">
-      <DependentUpon>Accepted.aspx</DependentUpon>
+    <Compile Include="Department\AcceptedApplications.aspx.designer.cs">
+      <DependentUpon>AcceptedApplications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Department\Applications.aspx.cs">
       <DependentUpon>Applications.aspx</DependentUpon>
@@ -713,12 +713,12 @@
     <Compile Include="Department\Applications.aspx.designer.cs">
       <DependentUpon>Applications.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Department\Rejected.aspx.cs">
-      <DependentUpon>Rejected.aspx</DependentUpon>
+    <Compile Include="Department\RejectedApplications.aspx.cs">
+      <DependentUpon>RejectedApplications.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Department\Rejected.aspx.designer.cs">
-      <DependentUpon>Rejected.aspx</DependentUpon>
+    <Compile Include="Department\RejectedApplications.aspx.designer.cs">
+      <DependentUpon>RejectedApplications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Department\viewPage.aspx.cs">
       <DependentUpon>viewPage.aspx</DependentUpon>

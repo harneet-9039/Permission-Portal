@@ -310,7 +310,7 @@
          </div>
     </div>
   
-    <footer class="footer">
+    <footer class="footer" style="position:fixed;bottom:0px;">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>

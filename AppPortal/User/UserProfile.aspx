@@ -32,7 +32,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/dist/material-datetime-picker.css?version=1" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-    
+    <script type="text/javascript">
+    function openModal() {
+        $('#exampleModalCenter').modal('show');
+    }
+</script>
 </head>
 
 
@@ -118,7 +122,7 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Your Profile&nbsp;( <span>* Year of Study and Email are only allowed to Update.</span>)</h4>
+                  <h4 class="card-title">Your Profile&nbsp;( <span>* Year of Study and Email are only allowed to be Updated.</span>)</h4>
                
                 </div>
                <div class="card-body">
@@ -193,7 +197,7 @@
                       </div>
                        <div class="col-md-4">
                         <div class="form-group">
-                         <asp:Button ID="Update_btn" runat="server" ValidationGroup="Update" Text="Update" class="btn btn-primary " />
+                         <asp:Button ID="Update_btn" OnClick="update_btn_Click" runat="server" ValidationGroup="Update" Text="Update" class="btn btn-primary " />
                          
                          
                         </div>
@@ -211,6 +215,28 @@
           </div>
         </div>
       </div>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="login px-4 mx-auto mw-100">
+                        
+                       <h5><asp:Label ID="error_lbl" class="text-center mb-4" runat="server" Text=""></asp:Label></h5>
+                            <!--<iframe id="urIframe" style="width:100%; height:500px" runat="server"></iframe>-->
+
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
          <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
