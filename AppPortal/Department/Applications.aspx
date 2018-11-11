@@ -21,6 +21,11 @@
   <link href="../User/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../User/assets/demo/demo.css" rel="stylesheet" />
+   <script type="text/javascript">
+    function openModal() {
+        $('#exampleModalCenter').modal('show');
+    }
+</script>
 </head>
 
 <body class="">
@@ -136,7 +141,7 @@
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                     <asp:GridView ID="User_grd" DataKeyNames="AppId" AutoGenerateColumns="false" CellPadding="0" HeaderStyle-CssClass="text-primary" CellSpacing="0" GridLines="None" BorderStyle="None" CssClass="table" runat="server">
+                     <asp:GridView ID="User_grd" DataKeyNames="AppId, ApplicationPath"  AutoGenerateColumns="false" CellPadding="0" HeaderStyle-CssClass="text-primary" CellSpacing="0" GridLines="None" BorderStyle="None" CssClass="table" runat="server">
                   
                     <Columns>
 
@@ -166,7 +171,15 @@
                    <asp:TemplateField>
                  <ItemTemplate>
                  
-                 <asp:Button ID="Approve_btn" CssClass="btn btn-primary" CommandName="Edit"  style="height:30px;padding-top:8px;" Text='<%# CheckStatus(Eval("Column1").ToString()).ToString() %>' runat="server"  />
+                 <asp:Button ID="Approve_btn" CssClass="btn btn-primary" style="height:30px;padding-top:8px;" OnClick="Approve_btn_Click" Text='<%# CheckStatus(Eval("Column1").ToString()).ToString() %>' runat="server"  />
+
+                 </ItemTemplate>
+                 <ItemStyle Width="20px" />
+                 </asp:TemplateField>
+                   <asp:TemplateField>
+                 <ItemTemplate>
+                 
+                 <asp:Button ID="Reject_btn" CssClass="btn btn-primary" style="height:30px;padding-top:8px;" OnClick="Reject_btn_Click" Text="Reject" runat="server"  />
 
                  </ItemTemplate>
                  <ItemStyle Width="20px" />
@@ -219,6 +232,29 @@
       </footer>
     </div>
   </div>
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="login px-4 mx-auto mw-100">
+                        
+                       <h5><asp:Label ID="error_lbl" class="text-center mb-4" runat="server" Text=""></asp:Label></h5>
+                            <!--<iframe id="urIframe" style="width:100%; height:500px" runat="server"></iframe>-->
+
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
   </form>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>

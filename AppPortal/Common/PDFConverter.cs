@@ -18,6 +18,8 @@ namespace AppPortal.Common
                     "HAR6432", "e7a85783be8be6c6adda49b7f034f3bb");
 
                 // create output stream for conversion result
+                if (File.Exists(HttpContext.Current.Server.MapPath("~/Applications/" + FileName + ".pdf")))
+                    File.Delete(HttpContext.Current.Server.MapPath("~/Applications/" + FileName + ".pdf"));
                 FileStream outputStream = new FileStream(HttpContext.Current.Server.MapPath("~/Applications/" + FileName+".pdf"), FileMode.CreateNew);
 
                 // run the conversion and write the result into the output stream
