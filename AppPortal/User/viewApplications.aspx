@@ -51,13 +51,13 @@
           <li class="nav-item active">
             <a class="nav-link" href="viewApplications.aspx">
               <i class="material-icons">library_books</i>
-              <p>View Applications</p>
+              <p>View Current Applications</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="acceptedApplications.aspx">
               <i class="material-icons">library_books</i>
-              <p>Accepted Applications</p>
+              <p>View Rejected Applications</p>
             </a>
           </li>
           
@@ -107,7 +107,7 @@
               <div class="card">
                 <div class="card-header card-header-primary">
                   <h4 class="card-title ">Submitted Applications</h4>
-                  <p class="card-category"> Here is the list of applications submitted by you</p>
+                  <p class="card-category"> Here is the list of applications submitted by you which are under process/accepted.</p>
                 </div>
                 <div class="card-body">
                 <div class="table-responsive">
