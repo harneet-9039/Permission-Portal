@@ -49,6 +49,15 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox purpose_txt;
         
         /// <summary>
+        /// PurposeValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PurposeValidator;
+        
+        /// <summary>
         /// venue_ddl control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.DropDownList venue_ddl;
         
         /// <summary>
+        /// VenueValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator VenueValidator;
+        
+        /// <summary>
         /// date1 control.
         /// </summary>
         /// <remarks>
@@ -65,6 +83,15 @@ namespace AppPortal.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox date1;
+        
+        /// <summary>
+        /// DateValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DateValidator1;
         
         /// <summary>
         /// cstvalid control.
@@ -85,6 +112,15 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox date2;
         
         /// <summary>
+        /// DatedValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DatedValidator2;
+        
+        /// <summary>
         /// cstvalidto control.
         /// </summary>
         /// <remarks>
@@ -103,6 +139,15 @@ namespace AppPortal.User {
         protected global::System.Web.UI.WebControls.TextBox timepicker_txt;
         
         /// <summary>
+        /// TimeValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator TimeValidator1;
+        
+        /// <summary>
         /// timepicker_to_txt control.
         /// </summary>
         /// <remarks>
@@ -110,6 +155,15 @@ namespace AppPortal.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox timepicker_to_txt;
+        
+        /// <summary>
+        /// TimeValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator TimeValidator2;
         
         /// <summary>
         /// generate_btn control.

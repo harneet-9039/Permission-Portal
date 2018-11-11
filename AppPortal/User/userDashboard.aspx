@@ -146,7 +146,8 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Purpose of Application</label>
-                          <asp:Textbox ID="purpose_txt" runat="server" class="form-control"></asp:Textbox>
+                          <asp:Textbox ID="purpose_txt" runat="server" class="form-control" AutoComplete="off"></asp:Textbox>
+                          <asp:RequiredFieldValidator ID="PurposeValidator" runat="server" ControlToValidate="purpose_txt" ErrorMessage="*Select purpose for application" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Error"></asp:RequiredFieldValidator>
                         </div>
                        
                         </div>
@@ -158,6 +159,7 @@
                             <asp:DropDownList ID="venue_ddl" runat="server" CssClass="form-control">
                              
                           </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="VenueValidator" runat="server" ControlToValidate="venue_ddl" ErrorMessage="*Select venue for event" InitialValue="-1" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Error"></asp:RequiredFieldValidator>
                         </div>
                       </div>
                       </div>
@@ -166,15 +168,17 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="control-label" for="date">From</label>
-                          <asp:TextBox ID="date1" runat="server" class="form-control c-datepicker-input"></asp:TextBox>
+                          <asp:TextBox ID="date1" runat="server" class="form-control c-datepicker-input" AutoComplete="off"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="DateValidator1" runat="server" ControlToValidate="date1" ErrorMessage="*Select date for event" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Error"></asp:RequiredFieldValidator>  
                             <asp:CustomValidator ID="cstvalid" ControlToValidate="date1" OnServerValidate="cstvalid_ServerValidate" ForeColor="Red" ValidationGroup="Error" runat="server" ErrorMessage="* Date cannot be before current date"></asp:CustomValidator>
                         </div>
                       </div>
                         <div class="col-md-6">
                         <div class="form-group">
                           <label class="control-label" for="date">To</label>
-                          <asp:TextBox ID="date2" runat="server" class="form-control c-datepicker-input-to"></asp:TextBox>
-                        <asp:CustomValidator ID="cstvalidto" ControlToValidate="date2" OnServerValidate="cstvalidto_ServerValidate" ForeColor="Red" ValidationGroup="Error" runat="server" ErrorMessage="* Date cannot be before current date"></asp:CustomValidator>
+                          <asp:TextBox ID="date2" runat="server" class="form-control c-datepicker-input-to" AutoComplete="off"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="DatedValidator2" runat="server" ControlToValidate="date2" ErrorMessage="*Select date for event" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Error"></asp:RequiredFieldValidator>
+                            <asp:CustomValidator ID="cstvalidto" ControlToValidate="date2" OnServerValidate="cstvalidto_ServerValidate" ForeColor="Red" ValidationGroup="Error" runat="server" ErrorMessage="* Date cannot be before current date"></asp:CustomValidator>
 
                         </div>
                       </div>
@@ -184,21 +188,21 @@
                         <div class="form-group">
                        
                           <label class="control-label" for="date">Time (From)</label>
-                          <asp:TextBox ID="timepicker_txt" runat="server" class="form-control"></asp:TextBox>
-                          
+                          <asp:TextBox ID="timepicker_txt" runat="server" class="form-control" AutoComplete="off"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="TimeValidator1" runat="server" ControlToValidate="timepicker_txt" ErrorMessage="*Select time for event" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Error"></asp:RequiredFieldValidator>
                         </div>
                       </div>
                         <div class="col-md-6">
                         <div class="form-group">
                           <label class="control-label" for="date">Time (To)</label>
-                          <asp:TextBox ID="timepicker_to_txt" runat="server" class="form-control"></asp:TextBox>
-                       
+                          <asp:TextBox ID="timepicker_to_txt" runat="server" class="form-control" AutoComplete="off"></asp:TextBox>
+                           <asp:RequiredFieldValidator ID="TimeValidator2" runat="server" ControlToValidate="timepicker_to_txt" ErrorMessage="*Select time for event" Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Error"></asp:RequiredFieldValidator>
                         </div>
                       </div>
                     </div>
                
                      
-                    <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" ValidationGroup="Error" CausesValidation="true" OnClick="generate_btn_Click" />
+                    <asp:Button ID="generate_btn" runat="server" class="btn btn-primary pull-right" Text="Generate Application" ValidationGroup="Error"  CausesValidation="true" OnClick="generate_btn_Click" />
                     
                       <div class="clearfix"></div>
                       
@@ -310,7 +314,7 @@
          </div>
     </div>
   
-    <footer class="footer">
+    <footer class="footer" style="position:fixed;bottom:0px;width:80%;background-color:#f3e6ff ;height:80px;">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>

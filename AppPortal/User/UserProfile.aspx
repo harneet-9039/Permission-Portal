@@ -128,14 +128,14 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Name</label>
-                          <asp:TextBox ID="UserName" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="UserName" runat="server" Enabled="false" CssClass="form-control" AutoComplete="off"></asp:TextBox>
                         </div>
                       </div>
                     
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Registration no.</label>
-                          <asp:TextBox ID="UserReg" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="UserReg" runat="server" Enabled="false" CssClass="form-control" AutoComplete="off"></asp:TextBox>
                         </div>
                       </div>
                     </div>
@@ -143,7 +143,7 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Department</label>
-                           <asp:TextBox ID="UserDept" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
+                           <asp:TextBox ID="UserDept" runat="server" Enabled="false" CssClass="form-control" AutoComplete="off" ></asp:TextBox>
                         </div>
                       </div>
                         
@@ -151,7 +151,7 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Course</label>
-                           <asp:TextBox ID="UserCourse" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
+                           <asp:TextBox ID="UserCourse" runat="server" Enabled="false" CssClass="form-control" AutoComplete="off"></asp:TextBox>
                         </div>
                       </div>
                         </div>
@@ -159,7 +159,7 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Year of Study</label>
-                           <asp:TextBox ID="YearOfStudy" runat="server" Enabled="true" CssClass="form-control"></asp:TextBox>
+                           <asp:TextBox ID="YearOfStudy" runat="server" Enabled="true" CssClass="form-control" AutoComplete="off"></asp:TextBox>
                            <asp:RequiredFieldValidator ID="Year_vld" runat="server" ControlToValidate="YearOfStudy" ErrorMessage="*year cannot be empty." Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Update"></asp:RequiredFieldValidator>
                         </div>
                       </div>
@@ -168,7 +168,7 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Email</label>
-                          <asp:TextBox ID="UserEmail" runat="server" Enabled="true" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="UserEmail" runat="server" Enabled="true" CssClass="form-control" AutoComplete="off"></asp:TextBox>
                           <asp:RequiredFieldValidator ID="Email_vld" runat="server" ControlToValidate="UserEmail" ErrorMessage="*Email cannot be empty." Display="Dynamic" ForeColor="Red" SetFocusOnError="true" ValidationGroup="Update"></asp:RequiredFieldValidator>
                           <asp:RegularExpressionValidator ID="EmailPatternValidator" runat="server" ControlToValidate="UserEmail" ErrorMessage="*E-mail address must be in the format of name@domain.xyz." SetFocusOnError="true" ValidationGroup="Update" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic" ForeColor="Red"></asp:RegularExpressionValidator>
                         </div>
@@ -211,7 +211,7 @@
           </div>
         </div>
       </div>
-         <footer class="footer">
+         <footer class="footer" style="position:fixed;bottom:0px;width:80%;background-color:#f3e6ff">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>

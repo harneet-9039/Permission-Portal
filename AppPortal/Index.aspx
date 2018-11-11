@@ -21,13 +21,12 @@
                     <div class="col-md-6 aboutright">
                         <h3>Get Permission for Events</h3>
                         <h3> for Successful Hosting.</h3>
-                        <h4>Design is so simple that's why it is so complicated</h4>
-                        <p>Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when
-                            an unknown printer took a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet malesuada
-                            mollis. Mauris porroinit consectetur cursus tortor vel interdum. Suspendisse interdum velit vel
-                            qu dapibus condimentum. Pellentesque consequat.</p>
+                        <h4>Explore all venues of MNNIT where you can conduct your event easily. </h4>
+                        <p>Motilal Nehru National Institute of Technology Allahabad, Prayagraj (MNNIT) is an Institute with total commitment to quality and excellence in academic pursuits. It was established as one of the seventeen Regional Engineering Colleges of India in the year 1961 as a joint enterprise of Government of India and Government of Uttar Pradesh, and was an associated college of University of Allahabad, which is the third oldest university in India.</p>
+
+
                         <div class="read inner mt-4">
-						<a href="about.html" class="btn btn-sm animated-button victoria-two">Read More</a>
+						
 					</div>
                     </div>
                 </div>

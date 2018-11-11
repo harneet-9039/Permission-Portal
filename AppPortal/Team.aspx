@@ -3,7 +3,7 @@
 <asp:Content ID="content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <ol class="breadcrumb">
 					<li class="breadcrumb-item">
-						<a href="index.html">Home</a>
+						<a href="index.aspx">Home</a>
 					</li>
 					<li class="breadcrumb-item active">Team</li>
 				</ol>
@@ -29,18 +29,18 @@
 
                                         <ul class="social-icons text-center">
                                             <li>
-                                                <a href="#">
+                                                <a href="https://www.facebook.com/harneet.singh.524596">
                                                     <i class="fab fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li class="mx-3">
-                                                <a href="#">
-                                                    <i class="fab fa-twitter"></i>
+                                                <a href="https://github.com/harneet-9039">
+                                                    <i class="fab fa-github"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
-                                                    <i class="fab fa-google-plus-g"></i>
+                                                <a href="https://www.linkedin.com/in/harneet-singh-66162b9a">
+                                                    <i class="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
 
@@ -68,18 +68,18 @@
 
 
                                             <li>
-                                                <a href="#">
+                                                <a href="https://www.facebook.com/aishwarya.sadana.3">
                                                     <i class="fab fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li class="mx-3">
-                                                <a href="#">
-                                                    <i class="fab fa-twitter"></i>
+                                                <a href="https://github.com/aishsadana">
+                                                    <i class="fab fa-github"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
-                                                    <i class="fab fa-google-plus-g"></i>
+                                                <a href="https://www.linkedin.com/in/aishwarya-sadana">
+                                                    <i class="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
 
@@ -107,18 +107,18 @@
 
 
                                             <li>
-                                                <a href="#">
+                                                <a href="https://www.facebook.com/shailjasmartshalurai">
                                                     <i class="fab fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li class="mx-3">
-                                                <a href="#">
-                                                    <i class="fab fa-twitter"></i>
+                                                <a href="https://github.com/swastikarai">
+                                                    <i class="fab fa-github"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
-                                                    <i class="fab fa-google-plus-g"></i>
+                                                <a href="https://www.linkedin.com/in/swastika-rai">
+                                                    <i class="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -143,18 +143,18 @@
 
 
                                             <li>
-                                                <a href="#">
+                                                <a href="https://www.facebook.com/profile.php?id=100018960106438">
                                                     <i class="fab fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li class="mx-3">
-                                                <a href="#">
-                                                    <i class="fab fa-twitter"></i>
+                                                <a href="https://github.com/pooja0327">
+                                                    <i class="fab fa-github"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
-                                                    <i class="fab fa-google-plus-g"></i>
+                                                <a href="https://www.linkedin.com/in/kumari-pooja">
+                                                    <i class="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
                                         </ul>

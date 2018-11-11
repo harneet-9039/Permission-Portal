@@ -14,20 +14,90 @@
 						<a href="Index.aspx">Home</a>
 					</li>
 					<li class="breadcrumb-item active">Contact</li>
-				</ol>
-	
-<!-- contact -->
-<section class="banner-bottom-w3layouts contact py-md-5 py-3">
+</ol>
+<center>
+<div style="background-color:#993d00;color:white;height:60%;width:100%;padding-top:4%;padding-bottom:4%;">
+                        <h3 class="course" >
+                            
+                           Contact Us
+                        </h3>
+                        <p class="para my-4"> 
+                          <h4 style="color:White"> Dean Academics<br />
+                           Motilal Nehru National Institute of Technology
+                           <br />Allahabad, Uttar Pradesh – 211004
+                           <br />Mobile : +01(24) 3212 9436
+                           <br />Email : permissionportal@gmail.com
+                           <br />Visit Us at :<a style="color:white;" href="http://www.mnnit.ac.in/"> www.mnnit.ac.in</a></h4>
+                        </p>
+</div>
+</center>
+<!--<section class="banner-bottom-w3layouts contact py-md-5 py-3">
         <div class="inner-sec-wthree-w3ls py-md-5 py-3">
             <h3 class="tittle-w3l text-center mb-lg-5 mb-3">
                 <span>Get Intouch</span>Contact Us</h3>
-			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345275!2d-118.69191921441556!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1522474296007"
-				    allowfullscreen></iframe>
-				<div class="main_grid_contact">
-					<div class="form">
-						<h4 class="mb-4 text-center">Send us a message</h4>
-						<form action="#" method="post">
+			
+				<section class="course-selection py-lg-5 py-md-4 py-4">
+        <div class="layer-transporant py-md-5 py-4">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 course-left">
+                        <h3 class="course" >
+                            
+                           Contacts
+                        </h3>
+                        <p class="para my-4"> 
+                          <h4 style=color:White> Dean Academics<br />
+                           Motilal Nehru National Institute of Technology
+                           <br />Allahabad, Uttar Pradesh – 211004
+                           <br />Mobile : +01(24) 3212 9436
+                           <br />Email : permissionportal@gmail.com
+                           <br />Visit Us at :<a style="color:white;" href="http://www.mnnit.ac.in/"> www.mnnit.ac.in</a></h4>
+                        </p>
+                        <!--<div class="row course-details-content">
+                            <div class="col course-detials-inner-info">
+
+                                <a href="#">
+                                    <h4>Expert Instructors</h4>
+                                </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod.
+                                </p>
+                            </div> 
+                            <div class="col course-detials-inner-info">
+
+                               <!-- <a href="#">
+                                    <h4>Certification</h4>
+                                </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                  <!--  <div class="col-lg-4 course-right">
+                        <form action="#" method="post">
+                            <h4 class="text-white text-center mb-3">Search for Available Course</h4>
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'">
+                            <input type="text" class="form-control" name="phone" placeholder="Your Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Phone Number'">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'">
+                            <select class="form-control option">
+                                <option>Course 1</option>
+                                <option>Course 2</option>
+                                <option>Course 3</option>
+                                <option>Course 4</option>
+                                <option>Course 5</option>
+                                <option>Course 7</option>
+                                <option>Course 8</option>
+                            </select>
+                            <input class="form-control mt-3" type="submit" value="Submit">
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section> -->
+		
+					<!--	<form action="#" method="post">
 							<div class="form-group">
 								<label class="my-2">Name</label>
 								<input class="form-control" type="text" name="Name" placeholder="" required="">
@@ -43,12 +113,12 @@
 							<div class="input-group1">
 								<input class="form-control" type="submit" value="Submit">
 							</div>
-						</form>
+						</form> -->
 					</div>
-				</div>
-			</div>
-		<!--	<div class="container">
-				<div class="address row">
+				
+			
+			
+			<!--	<div class="address row">
 					<div class="col-lg-4 address-grid-w3ls">
 						<div class="row address-info">
 							<div class="col-md-3 address-left text-center">
@@ -88,9 +158,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>-->
+				</div> -->
+			
 		</div>
 	</section>
-	<!-- //contact -->
    </asp:Content>

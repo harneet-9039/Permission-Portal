@@ -193,7 +193,7 @@
           </div>
         </div>
         </div>
-      <footer class="footer">
+      <footer class="footer" style="position:fixed;bottom:0px;width:80%;background-color:#f3e6ff">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>

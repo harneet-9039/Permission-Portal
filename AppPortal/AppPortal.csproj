@@ -112,6 +112,7 @@
     <Content Include="Department\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="Department\Rejected.aspx" />
     <Content Include="Department\viewPage.aspx" />
+    <Content Include="images\banner1.jpg" />
     <Content Include="images\CricketGround2.jpg" />
     <Content Include="images\gl.jpg" />
     <Content Include="images\gl1.jpg" />
@@ -637,7 +638,6 @@
     <Content Include="css\slider-pro.css" />
     <Content Include="css\style.css" />
     <Content Include="Gallery.aspx" />
-    <Content Include="images\audi1.jpg" />
     <Content Include="images\Culrav.jpg" />
     <Content Include="images\func1.jpg" />
     <Content Include="images\images.jpg" />
@@ -647,11 +647,9 @@
     <Content Include="webfonts\fa-solid-900.svg" />
     <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
-    <Content Include="images\banner1.jpg" />
     <Content Include="images\banner2.jpg" />
     <Content Include="images\banner3.jpg" />
     <Content Include="images\banner4.jpg" />
-    <Content Include="images\banner5.jpg" />
     <Content Include="images\blank.gif" />
     <Content Include="images\close.png" />
     <Content Include="images\closedhand.cur" />
