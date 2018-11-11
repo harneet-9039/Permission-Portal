@@ -11,8 +11,10 @@ namespace AppPortal.User
 {
     public partial class UserProfile : System.Web.UI.Page
     {
+        static int count = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Page.IsPostBack) return;
             GetUserProfileTableAdapter gp = new GetUserProfileTableAdapter();
             DataTable dt = new DataTable();
             dt = gp.GetUserProfile(Session["UserLogin"].ToString());
@@ -29,7 +31,7 @@ namespace AppPortal.User
             {
                 Response.Redirect("~/Index.aspx");
             }
-            if (Page.IsPostBack) return;
+            
             if (Session["UserLogin"] != null)
             {
                 GetUserNameTableAdapter gu = new GetUserNameTableAdapter();
@@ -49,6 +51,7 @@ namespace AppPortal.User
 
         private Boolean UpdateUserProfile()
         {
+            
             UpdateUserProfileTableAdapter UP = new UpdateUserProfileTableAdapter();
             object Result = UP.UpdateUserProfile(Session["UserLogin"].ToString(), Convert.ToInt32(YearOfStudy.Text), UserEmail.Text);
             Boolean chk = Convert.ToBoolean(Result);
@@ -62,9 +65,12 @@ namespace AppPortal.User
 
         protected void update_btn_Click(object sender, EventArgs e)
         {
+            if (count == 1) return;
             Boolean Result = UpdateUserProfile();
             if (Result == true)
             {
+                count = 1;
+                
                 error_lbl.Text = "Profile Updated successfully!!";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
             }

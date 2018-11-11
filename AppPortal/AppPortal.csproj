@@ -51,8 +51,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="pdfcrowd">
-      <HintPath>F:\pdf-crowd\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
+    <Reference Include="pdfcrowd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=747913b00a4ba166, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\HP\Downloads\PFs\pdfcrowd-4.3.5-dotnet\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -213,7 +214,6 @@
       <DependentUpon>Portal.xsd</DependentUpon>
     </Content>
     <Content Include="Content\AbstractTemplate.pdf" />
-    <Content Include="Applications\2017CA48010788.pdf" />
     <Content Include="Department\assets\css\material-dashboard.css.map" />
     <Content Include="Department\assets\js\material-dashboard.js.map" />
     <Content Include="Department\assets\scss\material-dashboard.scss" />
@@ -413,7 +413,7 @@
     <Content Include="Signature\Department\csed.jpg" />
     <Content Include="Signature\Department\ee.jpg" />
     <Content Include="Team.aspx" />
-    <Content Include="User\acceptedApplications.aspx" />
+    <Content Include="User\RejectedApplications.aspx" />
     <Content Include="User\assets\css\material-dashboard.css" />
     <Content Include="User\assets\css\material-dashboard.min.css" />
     <Content Include="User\assets\img\apple-icon.png" />
@@ -770,12 +770,12 @@
     <Compile Include="Team.aspx.designer.cs">
       <DependentUpon>Team.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\acceptedApplications.aspx.cs">
-      <DependentUpon>acceptedApplications.aspx</DependentUpon>
+    <Compile Include="User\RejectedApplications.aspx.cs">
+      <DependentUpon>RejectedApplications.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\acceptedApplications.aspx.designer.cs">
-      <DependentUpon>acceptedApplications.aspx</DependentUpon>
+    <Compile Include="User\RejectedApplications.aspx.designer.cs">
+      <DependentUpon>RejectedApplications.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\userDashboard.aspx.cs">
       <DependentUpon>userDashboard.aspx</DependentUpon>
@@ -800,9 +800,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Applications\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Signature\User\" />
+    <Folder Include="StaticHTML\" />
     <Folder Include="User\assets\dist\" />
   </ItemGroup>
   <ItemGroup>

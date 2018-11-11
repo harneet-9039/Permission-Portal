@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="acceptedApplications.aspx.cs" Inherits="AppPortal.User.acceptedApplications" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RejectedApplications.aspx.cs" Inherits="AppPortal.User.acceptedApplications" %>
 
 <!DOCTYPE html>
 
@@ -502,13 +502,13 @@
           </div>
         </div>
         </div>
-      <footer class="footer" style="position:fixed;bottom:0px;width:80%;background-color:#f3e6ff">
+      <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left" >
             <ul>
               <li>
                 <a href="../Index.aspx">
-                  Home
+                  Permission Portal
                 </a>
               </li>
               <li>

@@ -9,6 +9,7 @@ using AppPortal.PortalTableAdapters;
 using System.Windows.Forms;
 using System.IO;
 using AppPortal.Common;
+using System.Text;
 
 namespace AppPortal.User
 {
@@ -170,8 +171,16 @@ namespace AppPortal.User
             Random r = new Random();
             int randNum = r.Next(1000000);
             string sixDigitNumber = randNum.ToString("D6");
-            string NamePath = "http://Permission-Portal.somee.com/Applications/" + Session["UserLogin"].ToString() + sixDigitNumber+".pdf";
-            int Res = PDFConverter.DoConvert(Session["UserLogin"].ToString() + sixDigitNumber, temp);
+            using (FileStream fs = new FileStream(Server.MapPath("~/StaticHTML/"+ Session["UserLogin"].ToString() + sixDigitNumber+".html"), FileMode.Create))
+            {
+                using (StreamWriter w = new StreamWriter(fs, Encoding.UTF8))
+                {
+                    w.WriteLine(temp);
+                }
+            }
+            string NamePath = "~/Applications/" + Session["UserLogin"].ToString() + sixDigitNumber+".pdf";
+           
+            int Res = PDFConverter.DoConvert(Session["UserLogin"].ToString() + sixDigitNumber, "~/StaticHTML/" + Session["UserLogin"].ToString() + sixDigitNumber + ".html");
             if(Res==0)
             {
                 error_lbl.Text = "Failed to generate PDF, Try again!!";

@@ -785,7 +785,7 @@
 	  
 	  <!--footer-->
 	  
-      <footer class="footer" style="position:fixed;bottom:0px;width:80%;background-color:#f3e6ff">
+      <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>

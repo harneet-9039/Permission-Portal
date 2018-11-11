@@ -48,13 +48,13 @@
 		  <li class="nav-item">
             <a class="nav-link" href="./RejectedApplications.aspx">
               <i class="material-icons">content_paste</i>
-              <p>Rejected</p>
+              <p>Rejected Applications</p>
             </a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="./AcceptedApplications.aspx">
               <i class="material-icons">content_paste</i>
-              <p>Accepted</p>
+              <p>Accepted Applications</p>
             </a>
           </li>
           <!--<li class="nav-item ">
@@ -117,7 +117,7 @@
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                  
                   
-                      <asp:Button ID="logout_btn" OnVlick="logout_btn_Click" CssClass="dropdown-item" runat="server" Text="Log Out" />
+                      <asp:Button ID="logout_btn" OnClick="logout_btn_Click" CssClass="dropdown-item" runat="server" Text="Log Out" />
                 </div>
               </li>
             </ul>
@@ -131,60 +131,49 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title ">Submitted Applications</h4>
-                  <p class="card-category"> Here is the list of applications submitted by you</p>
+                  <h4 class="card-title ">Applications Pending</h4>
+                  <p class="card-category"> Here is the list of applications pending for approval (* Please disable any download manager for better experience.)</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table class="table">
-                      <thead class=" text-primary">
-                        <th>
-                          S.No.
-                        </th>
-                        <th>
-                          Purpose
-                        </th>
-                        <th>
-                          Date
-                        </th>
-                        <th>
-                          Download
-                        </th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            Dakota Rice
-                          </td>
-                          <td>
-                            Niger
-                          </td>
-                          <td>
-                            <button type="submit" class="btn btn-primary" style="height:30px;padding-top:8px;">Download</button>
-                          </td>
-                          
-                        </tr>
-                          <tr>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            Dakota Rice
-                          </td>
-                          <td>
-                            Niger
-                          </td>
-                          <td>
-                            <button type="submit" class="btn btn-primary" style="height:30px;padding-top:8px;">Download</button>
-                          </td>
-                          
-                        </tr>
-                      
-                      </tbody>
-                    </table>
+                     <asp:GridView ID="User_grd" DataKeyNames="AppId" AutoGenerateColumns="false" CellPadding="0" HeaderStyle-CssClass="text-primary" CellSpacing="0" GridLines="None" BorderStyle="None" CssClass="table" runat="server">
+                  
+                    <Columns>
+
+                 <asp:BoundField DataField="Purpose of Application" HeaderStyle-Font-Size="Medium" HeaderText="Purpose of Application" >
+               
+                 </asp:BoundField>
+                 <asp:BoundField DataField="Submission Date" HeaderStyle-Font-Size="Medium" HeaderText="Submission Date">
+                 
+                 </asp:BoundField>
+                 <asp:BoundField DataField="User Name" HeaderStyle-Font-Size="Medium" HeaderText="User Name">
+                 
+                 </asp:BoundField>
+                  <asp:BoundField DataField="Course Pursuing" HeaderStyle-Font-Size="Medium" HeaderText="Course Pursuing">
+                 <ItemStyle Width="20px" />
+                 </asp:BoundField>
+                  <asp:BoundField DataField="Venue Requested" HeaderStyle-Font-Size="Medium" HeaderText="Venue Requested">
+                 
+                 </asp:BoundField>
+               <asp:TemplateField>
+                 <ItemTemplate>
+                 
+                 <asp:HyperLink ID="view_btn" CssClass="btn btn-primary" NavigateUrl='<%# Eval("ApplicationPath") %>' style="height:30px;padding-top:8px;" runat="server" Text="View" />
+
+                 </ItemTemplate>
+                 <ItemStyle Width="20px" />
+                 </asp:TemplateField>
+                   <asp:TemplateField>
+                 <ItemTemplate>
+                 
+                 <asp:Button ID="Approve_btn" CssClass="btn btn-primary" CommandName="Edit"  style="height:30px;padding-top:8px;" Text='<%# CheckStatus(Eval("Column1").ToString()).ToString() %>' runat="server"  />
+
+                 </ItemTemplate>
+                 <ItemStyle Width="20px" />
+                 </asp:TemplateField>
+                
+             </Columns>
+                    </asp:GridView>
                   </div>
                 </div>
               </div>
@@ -193,7 +182,7 @@
           </div>
         </div>
         </div>
-      <footer class="footer" style="position:fixed;bottom:0px;width:80%;background-color:#f3e6ff">
+      <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
