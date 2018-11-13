@@ -8,10 +8,9 @@ using System.Web.UI.WebControls;
 using AppPortal.PortalTableAdapters;
 using AppPortal.DepPortalTableAdapters;
 
-
 namespace AppPortal.User
 {
-    public partial class rejectedApplications : System.Web.UI.Page
+    public partial class acceptedApplications1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,11 +23,11 @@ namespace AppPortal.User
 
         private void GetList()
         {
-            GetUserRejectedApplicationsTableAdapter ug = new GetUserRejectedApplicationsTableAdapter();
+            GetUserAcceptedApplicationsTableAdapter ug = new GetUserAcceptedApplicationsTableAdapter();
             DataTable dt = new DataTable();
-            dt = ug.GetUserRejectedApplications(Session["UserLogin"].ToString());
-            Rej_app.DataSource = dt;
-            Rej_app.DataBind();
+            dt = ug.GetUserAcceptedApplications(Session["UserLogin"].ToString());
+            Accp_app.DataSource = dt;
+            Accp_app.DataBind();
         }
 
         protected void logout_btn_Click(object sender, EventArgs e)

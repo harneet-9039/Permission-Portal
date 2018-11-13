@@ -85,10 +85,15 @@
           <li class="nav-item ">
             <a class="nav-link" href="acceptedApplications.aspx">
               <i class="material-icons">library_books</i>
+              <p>View Accepted Applications</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="rejectedApplications.aspx">
+              <i class="material-icons">library_books</i>
               <p>View Rejected Applications</p>
             </a>
           </li>
-        
         </ul>
       </div>
     </div>
