@@ -94,9 +94,14 @@ namespace AppPortal.Department
                 object res = us.UpdateStatus(ID, Status);
                 Boolean chk = Convert.ToBoolean(res);
 
-                if(chk==true)
+                if(chk==true && Status== "Approve and Forward")
                 {
                     error_lbl.Text = "Application forwarded Successfully!!";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                }
+                else if(chk == true && Status == "Approve and Allot")
+                {
+                    error_lbl.Text = "Application accepted Successfully!!";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
                 }
                 else {
@@ -131,12 +136,12 @@ namespace AppPortal.Department
 
                 if (chk == true)
                 {
-                    error_lbl.Text = "Application forwarded Successfully!!";
+                    error_lbl.Text = "Application rejected Successfully!!";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
                 }
                 else
                 {
-                    error_lbl.Text = "Error!!";
+                    error_lbl.Text = "Error, please try again!!";
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
                 }
             }
