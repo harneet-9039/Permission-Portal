@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="../images/logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    User Dashboard
+    Submitted Applications
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -57,10 +57,15 @@
           <li class="nav-item ">
             <a class="nav-link" href="acceptedApplications.aspx">
               <i class="material-icons">library_books</i>
+              <p>View Accepted Applications</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="rejectedApplications.aspx">
+              <i class="material-icons">library_books</i>
               <p>View Rejected Applications</p>
             </a>
           </li>
-          
         </ul>
       </div>
     </div>
