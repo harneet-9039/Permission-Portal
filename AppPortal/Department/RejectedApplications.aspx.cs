@@ -23,10 +23,10 @@ namespace AppPortal.Department
             if (Page.IsPostBack) return;
             if (Session["DeptLogin"] != null)
             {
-                GetDepartmentNameTableAdapter gu = new GetDepartmentNameTableAdapter();
-                object Result = gu.GetDepartmentName(Session["DeptLogin"].ToString());
+                AppPortal.DepPortalTableAdapters.GetDepartmentNameTableAdapter gu = new AppPortal.DepPortalTableAdapters.GetDepartmentNameTableAdapter();
+                DataTable Result = gu.GetDepDetails(Session["DeptLogin"].ToString());
 
-                string res = Convert.ToString(Result);
+                string res = Convert.ToString(Result.Rows[0][0].ToString());
                 department_txt.Text = res;
                 Session["DepName"] = res;
                 GetList();

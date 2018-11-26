@@ -386,7 +386,7 @@
         
       var hdfield = document.getElementById('app_hfd');
       hdfield.value = document.getElementById('App_pnl').innerHTML;
-      console.log(document.getElementById('App_pnl').innerHTML);
+      
   </script>  
   <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>

@@ -122,6 +122,10 @@
     <Content Include="images\gl5.png" />
     <Content Include="images\gl6.jpg" />
     <Content Include="images\ground.jpg" />
+    <Content Include="images\I1.jpeg" />
+    <Content Include="images\I2.jpg" />
+    <Content Include="images\I3.jpg" />
+    <Content Include="images\I4.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo1.png" />
     <Content Include="images\M1.jpg" />
@@ -129,6 +133,12 @@
     <Content Include="images\mphall.jpg" />
     <Content Include="images\nlh.jpg" />
     <Content Include="images\NLH2.jpg" />
+    <Content Include="images\P1.jpg" />
+    <Content Include="images\P2.jpg" />
+    <Content Include="images\P3.jpg" />
+    <Content Include="images\P4.jpg" />
+    <Content Include="images\P5.jpg" />
+    <Content Include="images\P6.jpg" />
     <Content Include="images\semi.jpg" />
     <Content Include="images\Ted-X.jpg" />
     <Content Include="packages.config" />
@@ -398,6 +408,8 @@
     <Content Include="Portal.xss">
       <DependentUpon>Portal.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\permission-portal - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\permission-portal - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
@@ -411,8 +423,12 @@
     <Content Include="Scripts\moment.min.js" />
     <Content Include="Signature\Department\csed.jpg" />
     <Content Include="Signature\Department\ee.jpg" />
+    <Content Include="Signature\User\csed.jpg" />
+    <Content Include="Signature\User\ee.jpg" />
     <Content Include="Team.aspx" />
     <Content Include="User\acceptedApplications.aspx" />
+    <Content Include="User\assets\dist\material-datetime-picker.css" />
+    <Content Include="User\assets\dist\material-datetime-picker.js" />
     <Content Include="User\rejectedApplications.aspx" />
     <Content Include="User\assets\css\material-dashboard.css" />
     <Content Include="User\assets\css\material-dashboard.min.css" />
@@ -810,9 +826,7 @@
     <Folder Include="Applications\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Signature\User\" />
     <Folder Include="StaticHTML\" />
-    <Folder Include="User\assets\dist\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

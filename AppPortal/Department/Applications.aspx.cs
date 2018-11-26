@@ -25,12 +25,13 @@ namespace AppPortal.Department
             if (Page.IsPostBack) return;
             if (Session["DeptLogin"] != null)
             {
-                GetDepartmentNameTableAdapter gu = new GetDepartmentNameTableAdapter();
-                object Result = gu.GetDepartmentName(Session["DeptLogin"].ToString());
+               AppPortal.DepPortalTableAdapters.GetDepartmentNameTableAdapter gu = new AppPortal.DepPortalTableAdapters.GetDepartmentNameTableAdapter();
+                DataTable Result = gu.GetDepDetails(Session["DeptLogin"].ToString());
 
-                string res = Convert.ToString(Result);
+                string res = Convert.ToString(Result.Rows[0][0].ToString());
                 department_txt.Text = res;
                 Session["DepName"] = res;
+                Session["DepSign"] = Result.Rows[0][1].ToString();
                 GetList();
             }
         }
@@ -47,6 +48,8 @@ namespace AppPortal.Department
         protected void logout_btn_Click(object sender, EventArgs e)
         {
             Session.Remove("DeptLogin");
+            Session.Remove("DepName");
+            Session.Remove("DepSign");
             Response.Redirect("~/Index.aspx");
         }
 
@@ -81,10 +84,10 @@ namespace AppPortal.Department
             string content = "";
             if (Status == "Approve and Forward")
             {
-                content = "<div class='row'><span id ='temp' style='float:right; color:red;text-decoration:bold'> Approved and forwarded, " + Session["DepName"].ToString() + " </span><br><img id ='Sign_lbl' src='../Content/signature.jpg' style='width:10%;height:10%;float: right;'></div><br>";
+                content = "<br><div class='row'><span id ='temp' style='float:right; color:red;text-decoration:bold'> Approved and forwarded, " + Session["DepName"].ToString() + " </span><br><img id ='Sign_lbl' src="+Session["DepSign"].ToString()+" style='width:10%;height:10%;float: right;'></div><br>";
             }
             else {
-                content = "<div class='row'><span id ='temp' style='float:right; color:green;text-decoration:bold'> Approved and Alloted, " + Session["DepName"].ToString() + " </span><br><img id ='Sign_lbl' src='../Content/signature.jpg' style='width:10%;height:10%;float: right;'></div><br>";
+                content = "<br><div class='row'><span id ='temp' style='float:right; color:green;text-decoration:bold'> Approved and Alloted, " + Session["DepName"].ToString() + " </span><br><img id ='Sign_lbl' src="+Session["DepSign"].ToString()+" style='width:10%;height:10%;float: right;'></div><br>";
             }
             File.AppendAllText(Server.MapPath(Path), content);
             int Res = PDFConverter.DoConvert(info.Name.Replace(".pdf", ""), Path);

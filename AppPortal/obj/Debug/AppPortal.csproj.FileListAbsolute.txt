@@ -191,7 +191,6 @@ F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.dll
 F:\Project\Permission-Portal\AppPortal\obj\Debug\AppPortal.pdb
 D:\Git_Projects\Permission-Portal\AppPortal\obj\Debug\AppPortal.csprojAssemblyReference.cache
 D:\Git_Projects\Permission-Portal\AppPortal\bin\pdfcrowd.dll
-D:\Permission-Portal\AppPortal\bin\pdfcrowd.dll
 C:\Users\Swastika\Desktop\Permission-Portal\AppPortal\obj\Debug\AppPortal.csprojResolveAssemblyReference.cache
 C:\Users\Swastika\Desktop\Permission-Portal\AppPortal\bin\roslyn\csc.exe
 C:\Users\Swastika\Desktop\Permission-Portal\AppPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
