@@ -31,15 +31,15 @@ the venue selected.<br>
 8. Each department has its own dashboard where the applications intended
 for it will be shown. The department can accept or reject the application.
 <br><br>
-You can clone or download the Permission Portal from the following link :
-<b>https://github.com/harneet-9039/Permission-Portal</b>
-You need to install few softwares to run the Permission Portal on your computer. Following are the softwares you need to download :
- <b>Microsoft Visual Studio<b>
+You can clone or download the Permission Portal from the following link :<br>
+<b>https://github.com/harneet-9039/Permission-Portal</b><br><br>
+You need to install few softwares to run the Permission Portal on your computer. Following are the softwares you need to download :<br><br>
+ <b>Microsoft Visual Studio<b><br>
 Download link:
-https://visualstudio.microsoft.com/downloads/
- <b>Microsoft SQL Server</b>
+https://visualstudio.microsoft.com/downloads/<br><br>
+ <b>Microsoft SQL Server</b><br>
 Download link:
-https://www.microsoft.com/en-gb/sql-server/sql-server-downloads
- <b>Microsoft SQL Server Management Studio</b>
+https://www.microsoft.com/en-gb/sql-server/sql-server-downloads<br><br>
+ <b>Microsoft SQL Server Management Studio</b><br>
 Download link:
-https://docs.microsoft.com/en-us/sql/ssms/download-sql-server- management-studio-ssms?view=sql-server-2017
+https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017
