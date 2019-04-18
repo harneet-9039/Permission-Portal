@@ -52,7 +52,7 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="pdfcrowd">
-      <HintPath>F:\pdfcrowd.dll</HintPath>
+      <HintPath>..\..\..\pdfcrowd-4.8.0\pdfcrowd.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
